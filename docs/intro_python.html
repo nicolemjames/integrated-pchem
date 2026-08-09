@@ -66,7 +66,7 @@
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Welcome to your Jupyter Book" href="../intro.html" />
+    <link rel="prev" title="Integrated Physical Chemistry" href="../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -210,7 +210,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Welcome to your Jupyter Book
+                    Integrated Physical Chemistry
                 </a>
             </li>
         </ul>
@@ -457,10 +457,7 @@
             </div>
             <nav aria-label="Page">
                 <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#print-statements-text-and-numbers">1.1: Print statements, text, and numbers</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#your-turn">Your turn!</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#print-statements-text-and-numbers">1.1: Print statements, text, and numbers</a></li>
 </ul>
             </nav>
         </div>
@@ -485,14 +482,23 @@
 <section id="print-statements-text-and-numbers">
 <h2>1.1: Print statements, text, and numbers<a class="headerlink" href="#print-statements-text-and-numbers" title="Link to this heading">#</a></h2>
 <p>There are many libraries built for use in Python. Each library comes with a suite of functions and tools that you can reference and use, as long as you’ve loaded that library. Before we get to that though, let’s start with some ‘pre-built’ functions that we can use without havign to load any libraries.</p>
-<p>The first program that many people learn to write is a “Hello, world!” program, which outputs the phrase _Hello, world!_To do so, we need the <code class="docutils literal notranslate"><span class="pre">print()</span></code> function. <a class="reference external" href="https://docs.python.org/3/library/functions.html#print"><code class="docutils literal notranslate"><span class="pre">print()</span></code></a> outputs whatever the object of the function is. Let’s see it in action:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;the world is waiting to be greeted&#39;</span><span class="p">)</span>
+<p>The first program that many people learn to write is a “Hello, world!” program, which outputs the phrase _Hello, world!_To do so, we need the <code class="docutils literal notranslate"><span class="pre">print()</span></code> function. <a class="reference external" href="https://docs.python.org/3/library/functions.html#print"><code class="docutils literal notranslate"><span class="pre">print()</span></code></a> outputs whatever the object of the function is.</p>
+<p>In this case, the object is text data, stored as a <a class="reference external" href="https://weisscharlesj.github.io/SciCompforChemists/notebooks/chapter_01/chap_01_notebook.html#strings">string</a>. In Python, strings are indicated using either single (<code class="docutils literal notranslate"><span class="pre">'</span></code>) or double (<code class="docutils literal notranslate"><span class="pre">&quot;</span></code>) quotations marks.</p>
+<p>Let’s see it in action:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;the world is waiting to be greeted&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>In this case, the object is text data, stored as a <a class="reference external" href="https://weisscharlesj.github.io/SciCompforChemists/notebooks/chapter_01/chap_01_notebook.html#strings">string</a>. In Python, strings are indicated using either single (<code class="docutils literal notranslate"><span class="pre">'</span></code>) or double (<code class="docutils literal notranslate"><span class="pre">&quot;</span></code>) quotations marks.</p>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>the world is waiting to be greeted
+</pre></div>
+</div>
+</div>
+</div>
 <hr class="docutils" />
-<section id="your-turn">
-<h3>Your turn!<a class="headerlink" href="#your-turn" title="Link to this heading">#</a></h3>
+<p><strong>Your turn!</strong></p>
 <p>In the code cell below, use the print command to output the string: <em>Hello, world!</em></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -506,6 +512,7 @@
 <p>In Python, <code class="docutils literal notranslate"><span class="pre">#</span></code> denotes a comment. Comments can be used to annotate code to make it easier to read and understand. Python ignores everything on lines that begin with  <code class="docutils literal notranslate"><span class="pre">#</span></code>. If the line just read <code class="docutils literal notranslate"><span class="pre">write</span> <span class="pre">your</span> <span class="pre">code</span> <span class="pre">here</span></code>, an error would be raised–you can try it and see!</p>
 </div>
 <div class="{note docutils">
+<p>The code should read:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -516,13 +523,25 @@
 <p>What do you think the Python output will be for each command below?</p>
 <p>A)  5 + 10 <br />
 B)  5.0 + 10.0</p>
+<p>Make a prediction, and test it in the code cell below.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#your code here</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="{note docutils">
-<p>Let’s try it:</p>
+<p>Running the code:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Addition</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A) &quot;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B) &quot;</span><span class="p">,</span> <span class="mf">5.0</span> <span class="o">+</span> <span class="mf">10.0</span><span class="p">)</span>
 </pre></div>
+</div>
+<p>should output:</p>
+<p><code class="docutils literal notranslate"><span class="pre">A)</span> <span class="pre">15</span></code> <br />
+<code class="docutils literal notranslate"><span class="pre">B)</span> <span class="pre">15.0</span></code></p>
 </div>
 <p><strong>Pause &amp; Consider:</strong></p>
 <ol class="arabic simple">
@@ -538,6 +557,7 @@ B)  5.0 + 10.0</p>
 <li><p><strong>Function</strong>: There are two items in each print command: one <em>string</em> (acting as a label), and one calculation. Each item is separated by a comma–Python will print one and then the other, on the same line.</p></li>
 </ul>
 </div>
+<div class="docutils">
 </div>
 <div class="{note docutils">
 <p>What do you think would happen if you added a <em>combination</em> of integers and floats? Make a prediction, and then test it by printing one or more calculations in the code cell below.</p>
@@ -550,10 +570,12 @@ B)  5.0 + 10.0</p>
 </div>
 </div>
 <div class="{note docutils">
-<p>It will default to a float:</p>
+<p>It will default to a float. For example:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test: &quot;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">+</span> <span class="mf">10.0</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>should output:</p>
+<p><code class="docutils literal notranslate"><span class="pre">test:</span> <span class="pre">15.0</span></code></p>
 </div>
 <hr class="footnotes docutils" />
 <aside class="footnote-list brackets">
@@ -566,7 +588,6 @@ B)  5.0 + 10.0</p>
 <p>“float” is short for “floating point number”, referring to how the number and decimal position are handled.</p>
 </aside>
 </aside>
-</section>
 </section>
 </section>
 
@@ -606,7 +627,7 @@ B)  5.0 + 10.0</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+        <p class="prev-next-title">Integrated Physical Chemistry</p>
       </div>
     </a>
 </div>
@@ -627,10 +648,7 @@ B)  5.0 + 10.0</p>
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#print-statements-text-and-numbers">1.1: Print statements, text, and numbers</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#your-turn">Your turn!</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#print-statements-text-and-numbers">1.1: Print statements, text, and numbers</a></li>
 </ul>
   </nav></div>
 
