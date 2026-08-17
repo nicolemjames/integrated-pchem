@@ -468,7 +468,7 @@ document.write(`
 <div class="margin admonition tip">
 <p class="admonition-title">Tip</p>
 <p>What was <code class="docutils literal notranslate"><span class="pre">#</span></code> for?</p>
-<p>In Python, <code class="docutils literal notranslate"><span class="pre">#</span></code> denotes a comment. Comments can be used to annotate code to make it easier to read and understand. Python ignores everything on lines that begin with  <code class="docutils literal notranslate"><span class="pre">#</span></code>. If the line just read <code class="docutils literal notranslate"><span class="pre">write</span> <span class="pre">your</span> <span class="pre">code</span> <span class="pre">here</span></code>, an error would be raised–you can try it and see!</p>
+<p><code class="docutils literal notranslate"><span class="pre">#</span></code> denotes a comment, for annotating code. Python ignores everything on lines that begin with  <code class="docutils literal notranslate"><span class="pre">#</span></code>. If the line just read <code class="docutils literal notranslate"><span class="pre">write</span> <span class="pre">your</span> <span class="pre">code</span> <span class="pre">here</span></code>, an error would be raised–you can try it and see!</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -478,7 +478,7 @@ document.write(`
 </div>
 </div>
 <div class="dropdown simple admonition">
-<p class="admonition-title"><strong>Solution</strong> (click to expand)</p>
+<p class="admonition-title"><strong>Solution</strong></p>
 <p>The code should read:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
 </pre></div>
@@ -486,13 +486,20 @@ document.write(`
 </div>
 <hr class="docutils" />
 <p><strong>Text data</strong> is useful for inputting labels, descriptors, printing statements, etc. However, <strong>numerical data</strong> is also very useful.<a class="footnote-reference brackets" href="#nums-useful" id="id1">1</a> Numbers are stored as <em>integers</em> (whole numbers) or <em>floats</em> (decimals<a class="footnote-reference brackets" href="#fp" id="id2">2</a>).</p>
-<div class="simple admonition hint">
-<p class="admonition-title">Hint</p>
-<p><strong>Consider:</strong>
-What do you think the Python output will be for each command below?</p>
+<div class="hint simple admonition">
+<p class="admonition-title"><strong>Consider:</strong></p>
+<p>What do you think the Python output will be for each command below?</p>
 <p>A)  5 + 10 <br />
 B)  5.0 + 10.0</p>
 <p>Make a prediction, and test it in the code cell below.</p>
+</div>
+<div class="margin dropdown simple admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Style notes</p>
+<ul class="simple">
+<li><p><strong>Readability:</strong> Space between values can make reading lots of code easier (e.g. <code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">+</span> <span class="pre">10</span></code> vs <code class="docutils literal notranslate"><span class="pre">5+10</span></code>). Python ignores spaces <em>unless</em> they are in a string.</p></li>
+<li><p><strong>Function</strong>: You can include multiple objects in one print command, separated by commas. For example: <code class="docutils literal notranslate"><span class="pre">print(&quot;A)&quot;,5</span> <span class="pre">+</span> <span class="pre">10</span></code>. Python will print each item sequentially, on the same line.</p></li>
+</ul>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -502,7 +509,7 @@ B)  5.0 + 10.0</p>
 </div>
 </div>
 <div class="dropdown simple admonition">
-<p class="admonition-title">Solution (click to expand)</p>
+<p class="admonition-title">Solution</p>
 <p>Running the code:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Addition</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A) &quot;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span>
@@ -519,20 +526,11 @@ B)  5.0 + 10.0</p>
 <li><p>Which value is an integer? Which is a float?</p></li>
 </ol>
 <div class="dropdown simple admonition">
-<p class="admonition-title">Solution (click to expand)</p>
+<p class="admonition-title">Solution</p>
 <p>Python output an integer (<code class="docutils literal notranslate"><span class="pre">15</span></code>) when two integers were added (<code class="docutils literal notranslate"><span class="pre">5+10</span></code>); it output a float (<code class="docutils literal notranslate"><span class="pre">15.0</span></code>) when two floats were added (<code class="docutils literal notranslate"><span class="pre">5.0+10.0</span></code>).</p>
 </div>
-<div class="dropdown simple admonition tip">
-<p class="admonition-title">Tip</p>
-<p>A few notes about that code…</p>
-<ul class="simple">
-<li><p><strong>Readability:</strong> Space between values makes it easier to read (<code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">+</span> <span class="pre">10</span></code> vs <code class="docutils literal notranslate"><span class="pre">5+10</span></code>). Python ignores spaces <em>unless</em> they are in a string.</p></li>
-<li><p><strong>Function</strong>: There are two items in each print command: one <em>string</em> (acting as a label), and one calculation. Each item is separated by a comma–Python will print one and then the other, on the same line.</p></li>
-</ul>
-</div>
-<div class="simple admonition hint">
-<p class="admonition-title">Hint</p>
-<p><strong>Consider:</strong></p>
+<div class="hint simple admonition">
+<p class="admonition-title"><strong>Consider:</strong></p>
 <p>What do you think would happen if you added a <em>combination</em> of integers and floats? Make a prediction, and then test it by printing one or more calculations in the code cell below.</p>
 </div>
 <div class="cell docutils container">
@@ -543,7 +541,7 @@ B)  5.0 + 10.0</p>
 </div>
 </div>
 <div class="dropdown simple admonition">
-<p class="admonition-title">Solution (click to expand)</p>
+<p class="admonition-title">Solution</p>
 <p>It will default to a float. For example:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test: &quot;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">+</span> <span class="mf">10.0</span><span class="p">)</span>
 </pre></div>
