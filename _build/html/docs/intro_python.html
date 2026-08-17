@@ -465,6 +465,11 @@ document.write(`
 <hr class="docutils" />
 <p><strong>Your turn!</strong></p>
 <p>In the code cell below, use the print command to output the string: <em>Hello, world!</em></p>
+<div class="margin admonition tip">
+<p class="admonition-title">Tip</p>
+<p>What was <code class="docutils literal notranslate"><span class="pre">#</span></code> for?</p>
+<p>In Python, <code class="docutils literal notranslate"><span class="pre">#</span></code> denotes a comment. Comments can be used to annotate code to make it easier to read and understand. Python ignores everything on lines that begin with  <code class="docutils literal notranslate"><span class="pre">#</span></code>. If the line just read <code class="docutils literal notranslate"><span class="pre">write</span> <span class="pre">your</span> <span class="pre">code</span> <span class="pre">here</span></code>, an error would be raised–you can try it and see!</p>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#write your code here!</span>
@@ -472,12 +477,7 @@ document.write(`
 </div>
 </div>
 </div>
-<div class="margin admonition tip">
-<p class="admonition-title">Tip</p>
-<p>What was <code class="docutils literal notranslate"><span class="pre">#</span></code> for?</p>
-<p>In Python, <code class="docutils literal notranslate"><span class="pre">#</span></code> denotes a comment. Comments can be used to annotate code to make it easier to read and understand. Python ignores everything on lines that begin with  <code class="docutils literal notranslate"><span class="pre">#</span></code>. If the line just read <code class="docutils literal notranslate"><span class="pre">write</span> <span class="pre">your</span> <span class="pre">code</span> <span class="pre">here</span></code>, an error would be raised–you can try it and see!</p>
-</div>
-<div class="simple admonition">
+<div class="dropdown simple admonition">
 <p class="admonition-title"><strong>Solution</strong> (click to expand)</p>
 <p>The code should read:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
@@ -488,7 +488,7 @@ document.write(`
 <p><strong>Text data</strong> is useful for inputting labels, descriptors, printing statements, etc. However, <strong>numerical data</strong> is also very useful.<a class="footnote-reference brackets" href="#nums-useful" id="id1">1</a> Numbers are stored as <em>integers</em> (whole numbers) or <em>floats</em> (decimals<a class="footnote-reference brackets" href="#fp" id="id2">2</a>).</p>
 <div class="simple admonition hint">
 <p class="admonition-title">Hint</p>
-<p>🧐 <strong>Consider:</strong>
+<p><strong>Consider:</strong>
 What do you think the Python output will be for each command below?</p>
 <p>A)  5 + 10 <br />
 B)  5.0 + 10.0</p>
@@ -501,7 +501,7 @@ B)  5.0 + 10.0</p>
 </div>
 </div>
 </div>
-<div class="simple admonition">
+<div class="dropdown simple admonition">
 <p class="admonition-title">Solution (click to expand)</p>
 <p>Running the code:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Addition</span>
@@ -518,11 +518,11 @@ B)  5.0 + 10.0</p>
 <li><p>Is this aligned with your prediction? If so, how did you know? If not, does it make sense in retrospect?</p></li>
 <li><p>Which value is an integer? Which is a float?</p></li>
 </ol>
-<div class="simple admonition">
+<div class="dropdown simple admonition">
 <p class="admonition-title">Solution (click to expand)</p>
 <p>Python output an integer (<code class="docutils literal notranslate"><span class="pre">15</span></code>) when two integers were added (<code class="docutils literal notranslate"><span class="pre">5+10</span></code>); it output a float (<code class="docutils literal notranslate"><span class="pre">15.0</span></code>) when two floats were added (<code class="docutils literal notranslate"><span class="pre">5.0+10.0</span></code>).</p>
 </div>
-<div class="simple admonition tip">
+<div class="dropdown simple admonition tip">
 <p class="admonition-title">Tip</p>
 <p>A few notes about that code…</p>
 <ul class="simple">
@@ -532,7 +532,7 @@ B)  5.0 + 10.0</p>
 </div>
 <div class="simple admonition hint">
 <p class="admonition-title">Hint</p>
-<p>🧐 <strong>Consider:</strong></p>
+<p><strong>Consider:</strong></p>
 <p>What do you think would happen if you added a <em>combination</em> of integers and floats? Make a prediction, and then test it by printing one or more calculations in the code cell below.</p>
 </div>
 <div class="cell docutils container">
@@ -542,7 +542,7 @@ B)  5.0 + 10.0</p>
 </div>
 </div>
 </div>
-<div class="simple admonition">
+<div class="dropdown simple admonition">
 <p class="admonition-title">Solution (click to expand)</p>
 <p>It will default to a float. For example:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test: &quot;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">+</span> <span class="mf">10.0</span><span class="p">)</span>
