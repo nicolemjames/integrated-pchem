@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Hello Python: Intro to Python &#8212; Integrated Physical Chemistry</title>
+    <title>1. Intro to Python (Hello Python) &#8212; Integrated Physical Chemistry</title>
   
   
   
@@ -174,7 +174,7 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Hello Python: Intro to Python</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Intro to Python (Hello Python)</a></li>
 </ul>
 
     </div>
@@ -409,7 +409,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Hello Python: Intro to Python</h1>
+    <h1>Intro to Python (Hello Python)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -419,15 +419,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-text-and-numbers">Functions, text, and numbers</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-a-program-to-output-text">Writing a program to output text</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numbers-floats-integers-and-arithmetic">Numbers: Floats, integers, and arithmetic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-text-and-numbers">1.1. Functions, text, and numbers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-a-program-to-output-text">1.1.1. Writing a program to output text</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#floats-integers-and-arithmetic">1.1.2. Floats, integers, and arithmetic</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arrays-and-lists">Arrays and lists</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting">Plotting</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">1.2. Variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arrays-and-lists">1.3. Arrays and lists</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting">1.4. Plotting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">1.5. Glossary</a></li>
 </ul>
             </nav>
         </div>
@@ -439,8 +439,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="hello-python-intro-to-python">
-<span id="intro-pyth"></span><h1>Hello Python: Intro to Python<a class="headerlink" href="#hello-python-intro-to-python" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="intro-to-python-hello-python">
+<span id="intro-pyth"></span><h1><span class="section-number">1. </span>Intro to Python (Hello Python)<a class="headerlink" href="#intro-to-python-hello-python" title="Link to this heading">#</a></h1>
 <div class="attention admonition">
 <p class="admonition-title">Section Goals:</p>
 <p>Use Python to:</p>
@@ -451,9 +451,9 @@ document.write(`
 </ul>
 </div>
 <section id="functions-text-and-numbers">
-<span id="func-text-num"></span><h2>Functions, text, and numbers<a class="headerlink" href="#functions-text-and-numbers" title="Link to this heading">#</a></h2>
+<span id="func-text-num"></span><h2><span class="section-number">1.1. </span>Functions, text, and numbers<a class="headerlink" href="#functions-text-and-numbers" title="Link to this heading">#</a></h2>
 <section id="writing-a-program-to-output-text">
-<span id="print-strings"></span><h3>Writing a program to output text<a class="headerlink" href="#writing-a-program-to-output-text" title="Link to this heading">#</a></h3>
+<span id="print-strings"></span><h3><span class="section-number">1.1.1. </span>Writing a program to output text<a class="headerlink" href="#writing-a-program-to-output-text" title="Link to this heading">#</a></h3>
 <p>The first program that many people learn to write is a “Hello, world!” program, which performs the function of outputting the phrase “Hello, world!”</p>
 <p>To do so, we need the <code class="docutils literal notranslate"><span class="pre">print()</span></code> <a class="reference internal" href="#term-function"><span class="xref std std-term">function</span></a>. <code class="docutils literal notranslate"><span class="pre">print()</span></code> outputs whatever its object is. Similar to a mathematical function (<span class="math notranslate nohighlight">\(f(x)\)</span>), the function object is placed in the parentheses (<code class="docutils literal notranslate"><span class="pre">print(x)</span></code>).</p>
 <p>For a “Hello, world!” program, the object is text data stored as a <a class="reference internal" href="#term-string"><span class="xref std std-term">string</span></a> data type. In Python, strings are indicated using either single (<code class="docutils literal notranslate"><span class="pre">'</span></code>) or double (<code class="docutils literal notranslate"><span class="pre">&quot;</span></code>) quotations marks.</p>
@@ -476,10 +476,16 @@ document.write(`
 </div>
 <div class="exercise admonition" id="hello-world">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1 </span> (Greet the world)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.1 </span> (Greet the world)</p>
 <section id="exercise-content">
-<p>In the code cell below, use the <code class="docutils literal notranslate"><span class="pre">print()</span></code> function to output the string: <em>Hello, world!</em></p>
-<p><em>Recall:</em> To make the cells editable and executable, click the rocket symbol at the top of this page, click “live code”, and wait for the progress window to read: “Launching from <a class="reference external" href="http://mybinder.org">mybinder.org</a>: ready”</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+(a)</label><div class="sd-tab-content docutils">
+<p>In the code cell below, use the <code class="docutils literal notranslate"><span class="pre">print()</span></code> function to output the string: Hello, world!</p>
+<p><em>Hint:</em> To make the cells editable and executable, click the rocket symbol at the top of this page, click “live code”, and wait for the progress window to read: “Launching from <a class="reference external" href="http://mybinder.org">mybinder.org</a>: ready”</p>
+</div>
+</div>
 </section>
 </div>
 <div class="cell docutils container">
@@ -491,7 +497,7 @@ document.write(`
 </div>
 <div class="solution dropdown simple admonition" id="hello-world-soln">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#hello-world"> Exercise 1 (Greet the world)</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#hello-world"> Exercise 1.1 (Greet the world)</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
 </pre></div>
@@ -502,15 +508,15 @@ document.write(`
 </section>
 </div>
 </section>
-<section id="numbers-floats-integers-and-arithmetic">
-<span id="math-nums"></span><h3>Numbers: Floats, integers, and arithmetic<a class="headerlink" href="#numbers-floats-integers-and-arithmetic" title="Link to this heading">#</a></h3>
-<p>Numerical data is also very useful.<a class="footnote-reference brackets" href="#nums-useful" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> Numbers can be stored as an <a class="reference internal" href="#term-integer"><span class="xref std std-term">integer</span></a> or <a class="reference internal" href="#term-float"><span class="xref std std-term">float</span></a> data type.  Python can also perform several arithmetic operations directly, much like a calculator. Common operators are summarized in <a class="reference internal" href="#math-operators"><span class="std std-numref">Table 1</span></a>.</p>
+<section id="floats-integers-and-arithmetic">
+<span id="math-nums"></span><h3><span class="section-number">1.1.2. </span>Floats, integers, and arithmetic<a class="headerlink" href="#floats-integers-and-arithmetic" title="Link to this heading">#</a></h3>
+<p>Numerical data is also very useful.<a class="footnote-reference brackets" href="#nums-useful" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> Numbers can be stored as an <a class="reference internal" href="#term-integer"><span class="xref std std-term">integer</span></a> or <a class="reference internal" href="#term-float"><span class="xref std std-term">float</span></a> data type.  Python can also perform several arithmetic operations directly, much like a calculator. Common operators are summarized in <a class="reference internal" href="#math-operators"><span class="std std-numref">Table 1.1</span></a>.</p>
 <div class="hint margin simple admonition">
 <p class="admonition-title">Side Note</p>
 <p>Python can also directly handle <a class="reference internal" href="#term-integer-division"><span class="xref std std-term">integer division</span></a> and <a class="reference internal" href="#term-modulus"><span class="xref std std-term">modulus</span></a> operations.</p>
 </div>
 <div class="pst-scrollable-table-container"><table class="table" id="math-operators">
-<caption><span class="caption-number">Table 1 </span><span class="caption-text">Python syntax for common mathematical operators</span><a class="headerlink" href="#math-operators" title="Link to this table">#</a></caption>
+<caption><span class="caption-number">Table 1.1 </span><span class="caption-text">Python syntax for common mathematical operators</span><a class="headerlink" href="#math-operators" title="Link to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head text-center"><p>Operator</p></th>
 <th class="head text-center"><p>Operation</p></th>
@@ -550,11 +556,11 @@ document.write(`
 <p>Python follows standard order of operations: parentheses first, then exponents, then multiplication &amp; division, then addition &amp; subtraction.</p>
 <div class="exercise admonition" id="hello-math">
 
-<p class="admonition-title"><span class="caption-number">Exercise 2 </span> (Hello Math)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.2 </span> (Hello Math)</p>
 <section id="exercise-content">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-0">
+<input checked="checked" id="sd-tab-item-1" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
 (a)</label><div class="sd-tab-content docutils">
 <p>What do you think the Python output will be for each operation below? Make a prediction, then use the code cell below to test your prediction by performing the calculations and printing the outputs.</p>
 <ol class="arabic simple">
@@ -562,14 +568,14 @@ document.write(`
 <li><p>5.0 + 10.0</p></li>
 </ol>
 </div>
-<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-1">
+<input id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
 (b)</label><div class="sd-tab-content docutils">
 <p>Make a prediction: What do you think would happen if you added a <em>combination</em> of integers and floats?</p>
 <p>Test your prediction by printing one or more calculations in the code cell below.</p>
 </div>
-<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-2">
+<input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
 (c)</label><div class="sd-tab-content docutils">
 <p>In the code cells below, print:</p>
 <ol class="arabic simple">
@@ -577,8 +583,8 @@ document.write(`
 <li><p>10 raised to the 2nd power</p></li>
 </ol>
 </div>
-<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-3">
+<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
 (d)</label><div class="sd-tab-content docutils">
 <p>Predict the output of each of the following lines, and then test your predictions by printing the outputs in the code cell below.</p>
 <ol class="arabic simple">
@@ -627,11 +633,11 @@ document.write(`
 </div>
 <div class="solution dropdown simple admonition" id="hello-math-soln">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#hello-math"> Exercise 2 (Hello Math)</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#hello-math"> Exercise 1.2 (Hello Math)</a></p>
 <section id="solution-content">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-4">
+<input checked="checked" id="sd-tab-item-5" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
 (a)</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1. &quot;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2. &quot;</span><span class="p">,</span> <span class="mf">5.0</span> <span class="o">+</span> <span class="mf">10.0</span><span class="p">)</span>
@@ -642,8 +648,8 @@ document.write(`
 </div>
 <p>Python outputs an integer (<code class="docutils literal notranslate"><span class="pre">15</span></code>) when two integers are added (<code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">+</span> <span class="pre">10</span></code>); it outputs a float (<code class="docutils literal notranslate"><span class="pre">15.0</span></code>) when two floats are added (<code class="docutils literal notranslate"><span class="pre">5.0</span> <span class="pre">+</span> <span class="pre">10.0</span></code>).</p>
 </div>
-<input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-5">
+<input id="sd-tab-item-6" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-6">
 (b)</label><div class="sd-tab-content docutils">
 <p>I predict it will default to a float. Let’s see:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test: &quot;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">+</span> <span class="mf">10.0</span><span class="p">)</span>
@@ -654,8 +660,8 @@ document.write(`
 </div>
 <p>Viola, it’s a float! If it defaulted to an integer, information could be lost.</p>
 </div>
-<input id="sd-tab-item-6" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-6">
+<input id="sd-tab-item-7" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-7">
 (c)</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1. &quot;</span><span class="p">,</span> <span class="mi">5</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2. &quot;</span><span class="p">,</span> <span class="mi">10</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
@@ -665,8 +671,8 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<input id="sd-tab-item-7" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-7">
+<input id="sd-tab-item-8" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-8">
 (d)</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1. &quot;</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2. &quot;</span><span class="p">,</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">3</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
@@ -698,7 +704,7 @@ document.write(`
 </section>
 </section>
 <section id="variables">
-<span id="var"></span><h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
+<span id="var"></span><h2><span class="section-number">1.2. </span>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
 <p>In programming, a <a class="reference internal" href="#term-variable"><span class="xref std std-term">variable</span></a> stores an object (string, integer, float, etc). Once a variable is assigned a value, it retains that value throughout a session until it is changed.</p>
 <p>Using variables instead of hardcoding in a specific value makes it easier to write, read, and update code. By assigning a value to a variable and then referring to the variable throughout, the value can be updated everywhere i the code at once by simply updating the definition.</p>
 <p>For example:</p>
@@ -730,11 +736,11 @@ document.write(`
 </div>
 <div class="exercise admonition" id="hello-var">
 
-<p class="admonition-title"><span class="caption-number">Exercise 3 </span> (Hello Variables)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.3 </span> (Hello Variables)</p>
 <section id="exercise-content">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-8" name="sd-tab-set-2" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-8">
+<input checked="checked" id="sd-tab-item-9" name="sd-tab-set-3" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-9">
 (a)</label><div class="sd-tab-content docutils">
 <p>Following the structure in the example above, calculate and print:</p>
 <ol class="arabic simple">
@@ -748,14 +754,14 @@ document.write(`
 </ul>
 <p><em>Hint:</em> be sure to use different variables for different parameters, don’t just overwrite them (e.g., <code class="docutils literal notranslate"><span class="pre">n_N2</span></code>, <code class="docutils literal notranslate"><span class="pre">n_O2</span></code> instead of just <code class="docutils literal notranslate"><span class="pre">n</span></code>).</p>
 </div>
-<input id="sd-tab-item-9" name="sd-tab-set-2" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-9">
+<input id="sd-tab-item-10" name="sd-tab-set-3" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-10">
 (b)</label><div class="sd-tab-content docutils">
 <p>Add on to your code to calculate the total pressure of the system.</p>
 <p><em>Hint:</em> Recall the law of partial pressures: <span class="math notranslate nohighlight">\(P_\text{total}=P_1+P_2+P_3+...\)</span></p>
 </div>
-<input id="sd-tab-item-10" name="sd-tab-set-2" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-10">
+<input id="sd-tab-item-11" name="sd-tab-set-3" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-11">
 (c)</label><div class="sd-tab-content docutils">
 <p>Uh oh, things are heating up! Update your code to perform the calculations with <span class="math notranslate nohighlight">\(T=500 \text{ K}\)</span></p>
 <p><em>Hint:</em> If you set up and used variables nicely, this should only require one single change!</p>
@@ -772,11 +778,11 @@ document.write(`
 </div>
 <div class="solution dropdown simple admonition" id="hello-var-soln">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#hello-var"> Exercise 3 (Hello Variables)</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#hello-var"> Exercise 1.3 (Hello Variables)</a></p>
 <section id="solution-content">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-11" name="sd-tab-set-3" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-11">
+<input checked="checked" id="sd-tab-item-12" name="sd-tab-set-4" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-12">
 (a)</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#define values:</span>
 <span class="n">V</span> <span class="o">=</span> <span class="mi">15</span> <span class="c1">#L</span>
@@ -797,8 +803,8 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<input id="sd-tab-item-12" name="sd-tab-set-3" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-12">
+<input id="sd-tab-item-13" name="sd-tab-set-4" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-13">
 (b)</label><div class="sd-tab-content docutils">
 <p>All we need to do is add the calculation <span class="math notranslate nohighlight">\(P_\text{total}=P_\text{O2}+P_\text{N2}\)</span>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#define values:</span>
@@ -824,8 +830,8 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<input id="sd-tab-item-13" name="sd-tab-set-3" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-13">
+<input id="sd-tab-item-14" name="sd-tab-set-4" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-14">
 (c)</label><div class="sd-tab-content docutils">
 <p>Because we defined our system parameters as variables and referred to those variables in calculations, we can update the temperature for all calculations simply by updating the definition of <code class="docutils literal notranslate"><span class="pre">T</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#define values:</span>
@@ -856,7 +862,7 @@ document.write(`
 </div>
 </section>
 <section id="arrays-and-lists">
-<span id="arr-list"></span><h2>Arrays and lists<a class="headerlink" href="#arrays-and-lists" title="Link to this heading">#</a></h2>
+<span id="arr-list"></span><h2><span class="section-number">1.3. </span>Arrays and lists<a class="headerlink" href="#arrays-and-lists" title="Link to this heading">#</a></h2>
 <p>So far we have used <a class="reference internal" href="#term-scalar-variable"><span class="xref std std-term">scalar variable</span></a>s. As you might imagine, there are many situations where it is useful for a variable to represent a collection of values. This can be done using an <a class="reference internal" href="#term-array"><span class="xref std std-term">array</span></a> or a <a class="reference internal" href="#term-list"><span class="xref std std-term">list</span></a>. Similar to strings, floats, and integers, the list data-type is pre-installed in Python directly.</p>
 <p>Lists can de defined using square brackets (<code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code>). For example:</p>
 <div class="cell docutils container">
@@ -880,13 +886,13 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 </div>
 </div>
 <p>In contrast, arrays are <em>not</em> pre-installed. To use these, we need to load a <a class="reference internal" href="#term-coding-library"><span class="xref std std-term">coding library</span></a>. By loading a coding library, we load in definitions of functions and data types that we can use without having to define them ourselves.</p>
-<p>The <a class="reference external" href="https://numpy.org/">NumPy</a><a class="footnote-reference brackets" href="#numpy" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> library is very useful for scientific calculations. Its array class enables mathematical calculations to be applied to the entire collection, can be used in plotting, etc. NumPy also contains a number of functions that can be used to generate an array; several of the more common ones are summarized in <a class="reference internal" href="#numpy-arrays"><span class="std std-numref">Table 2</span></a></p>
+<p>The <a class="reference external" href="https://numpy.org/">NumPy</a><a class="footnote-reference brackets" href="#numpy" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> library is very useful for scientific calculations. Its array class enables mathematical calculations to be applied to the entire collection, can be used in plotting, etc. NumPy also contains a number of functions that can be used to generate an array; several of the more common ones are summarized in <a class="reference internal" href="#numpy-arrays"><span class="std std-numref">Table 1.2</span></a></p>
 <div class="hint margin simple admonition">
 <p class="admonition-title">Side Note</p>
 <p>Note that NumPy’s <code class="docutils literal notranslate"><span class="pre">arange()</span></code> function includes the start value, but stops one shy of the stop value. The <code class="docutils literal notranslate"><span class="pre">linspace()</span></code> function includes both.</p>
 </div>
 <div class="pst-scrollable-table-container"><table class="table" id="numpy-arrays">
-<caption><span class="caption-number">Table 2 </span><span class="caption-text">Common NumPy Functions that Generate Arrays</span><a class="headerlink" href="#numpy-arrays" title="Link to this table">#</a></caption>
+<caption><span class="caption-number">Table 1.2 </span><span class="caption-text">Common NumPy Functions that Generate Arrays</span><a class="headerlink" href="#numpy-arrays" title="Link to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>NumPy Function</p></th>
 <th class="head text-left"><p>Description</p></th>
@@ -932,22 +938,22 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 <p>The first line loads the numpy library, and gives it the name <code class="docutils literal notranslate"><span class="pre">np</span></code>. When we want to call a function from a library, we need to tell Python which library it can find the function’s definition in. As shown in the second line, we do that by prefixing the function name with <code class="docutils literal notranslate"><span class="pre">np.</span></code>.</p>
 <div class="exercise admonition" id="hello-shape">
 
-<p class="admonition-title"><span class="caption-number">Exercise 4 </span> (Hello Array)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.4 </span> (Hello Array)</p>
 <section id="exercise-content">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-14" name="sd-tab-set-4" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-14">
+<input checked="checked" id="sd-tab-item-15" name="sd-tab-set-5" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-15">
 (a)</label><div class="sd-tab-content docutils">
 <p>In the code cell below, use NumPy’s <code class="docutils literal notranslate"><span class="pre">linspace()</span></code> function to create a variable called <code class="docutils literal notranslate"><span class="pre">x_20</span></code> which ranges from  -4 to 4 and has 20 points. Print <code class="docutils literal notranslate"><span class="pre">x_20</span></code> so you can look at it.</p>
 </div>
-<input id="sd-tab-item-15" name="sd-tab-set-4" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-15">
+<input id="sd-tab-item-16" name="sd-tab-set-5" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-16">
 (b)</label><div class="sd-tab-content docutils">
 <p>You could manually count the points to confirm that <code class="docutils literal notranslate"><span class="pre">x_20</span></code> contains 20 objects. Or, you can take advantage of another NumPy function: <a class="reference external" href="https://numpy.org/devdocs/reference/generated/numpy.shape.html">shape</a>. <code class="docutils literal notranslate"><span class="pre">shape()</span></code> returns a <a class="reference internal" href="#term-tuple"><span class="xref std std-term">tuple</span></a>: <code class="docutils literal notranslate"><span class="pre">(m,n)</span></code>, where <em>m</em> is the number of rows in the array and <em>n</em> is the number of columns. The syntax for this function is <code class="docutils literal notranslate"><span class="pre">np.shape(your_array).</span></code></p>
 <p>Use <code class="docutils literal notranslate"><span class="pre">np.shape()</span></code> to verify that <code class="docutils literal notranslate"><span class="pre">x_20</span></code> is indeed 1 dimensional, with 20 entries.</p>
 </div>
-<input id="sd-tab-item-16" name="sd-tab-set-4" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-16">
+<input id="sd-tab-item-17" name="sd-tab-set-5" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-17">
 (c)</label><div class="sd-tab-content docutils">
 <p>Create a new variable, <code class="docutils literal notranslate"><span class="pre">y_20</span></code> defined as <code class="docutils literal notranslate"><span class="pre">y_20</span> <span class="pre">=</span> <span class="pre">x_20+3</span></code>. Use the <code class="docutils literal notranslate"><span class="pre">np.shape()</span></code> function to confirm it has the same dimensions as <code class="docutils literal notranslate"><span class="pre">x_20</span></code>.</p>
 </div>
@@ -963,11 +969,11 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 </div>
 <div class="solution dropdown simple admonition" id="hello-shape-soln">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#hello-shape"> Exercise 4 (Hello Array)</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#hello-shape"> Exercise 1.4 (Hello Array)</a></p>
 <section id="solution-content">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-17" name="sd-tab-set-5" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-17">
+<input checked="checked" id="sd-tab-item-18" name="sd-tab-set-6" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-18">
 (a)</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x_20</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">x_20</span><span class="p">)</span>
@@ -977,8 +983,8 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 </pre></div>
 </div>
 </div>
-<input id="sd-tab-item-18" name="sd-tab-set-5" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-18">
+<input id="sd-tab-item-19" name="sd-tab-set-6" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-19">
 (b)</label><div class="sd-tab-content docutils">
 <p>This can be done by printing the shape function directly:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">x_20</span><span class="p">))</span>
@@ -996,8 +1002,8 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 </pre></div>
 </div>
 </div>
-<input id="sd-tab-item-19" name="sd-tab-set-5" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-19">
+<input id="sd-tab-item-20" name="sd-tab-set-6" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-20">
 (c)</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">y_20</span> <span class="o">=</span> <span class="n">x_20</span> <span class="o">+</span> <span class="mi">3</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">y_20</span><span class="p">))</span>
@@ -1012,7 +1018,7 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 </div>
 </section>
 <section id="plotting">
-<span id="plot"></span><h2>Plotting<a class="headerlink" href="#plotting" title="Link to this heading">#</a></h2>
+<span id="plot"></span><h2><span class="section-number">1.4. </span>Plotting<a class="headerlink" href="#plotting" title="Link to this heading">#</a></h2>
 <p>There are several libraries that facilitate visualizing data; a common one is <a class="reference external" href="https://matplotlib.org/stable/users/index.html">matplotlib</a>, which has a submodule called <a class="reference external" href="https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html">pyplot</a>. Let’s see an example:</p>
 <div class="hint margin simple admonition">
 <p class="admonition-title">Side Note</p>
@@ -1137,11 +1143,11 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 </div>
 <div class="exercise admonition" id="hello-plots">
 
-<p class="admonition-title"><span class="caption-number">Exercise 5 </span> (Just Plotting, no Scheming)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.5 </span> (Just Plotting, no Scheming)</p>
 <section id="exercise-content">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-20" name="sd-tab-set-6" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-20">
+<input checked="checked" id="sd-tab-item-21" name="sd-tab-set-7" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-21">
 (a)</label><div class="sd-tab-content docutils">
 <p>Generate a figure that plots <span class="math notranslate nohighlight">\(y(x) = ax^3 + bx^2 + cx + d\)</span> over the range <span class="math notranslate nohighlight">\(x = -5\)</span> to <span class="math notranslate nohighlight">\(x = 5\)</span>, for the following values:</p>
 <p><span class="math notranslate nohighlight">\(a = 3\)</span> <br />
@@ -1150,8 +1156,8 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 <span class="math notranslate nohighlight">\(d = -5\)</span></p>
 <p>Be sure to label your axes, and indicate your data points with markers!</p>
 </div>
-<input id="sd-tab-item-21" name="sd-tab-set-6" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-21">
+<input id="sd-tab-item-22" name="sd-tab-set-7" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-22">
 (b)</label><div class="sd-tab-content docutils">
 <p>Generate a figure and plot the following over the range <span class="math notranslate nohighlight">\(x = -5\)</span> to <span class="math notranslate nohighlight">\(x = 5\)</span>:</p>
 <ol class="arabic simple">
@@ -1178,55 +1184,13 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#cell metadata tagged: remove-cell</span>
-
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-
-<span class="c1"># (a)</span>
-<span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">c</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span>
-<span class="n">d</span> <span class="o">=</span> <span class="o">-</span><span class="mi">5</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">a</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="o">+</span> <span class="n">b</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">c</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="n">d</span>
-
-<span class="n">fig_a</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;o-&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;y(x)&#39;</span><span class="p">)</span>
-
-<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;hello-plots-soln-a&quot;</span><span class="p">,</span> <span class="n">fig_a</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">fig_a</span><span class="p">)</span>
-
-<span class="c1"># (b)</span>
-<span class="n">g</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span>
-<span class="n">h</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span>
-<span class="n">j</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span>
-
-<span class="n">fig_b</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="s1">&#39;o-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;g(x)&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="s1">&#39;o-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;h(x)&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="s1">&#39;o-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;j(x)&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;f(x)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-
-<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;hello-plots-soln-b&quot;</span><span class="p">,</span> <span class="n">fig_b</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">fig_b</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
 <div class="solution dropdown simple admonition" id="hello-plots-soln">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#hello-plots"> Exercise 5 (Just Plotting, no Scheming)</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#hello-plots"> Exercise 1.5 (Just Plotting, no Scheming)</a></p>
 <section id="solution-content">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-22" name="sd-tab-set-7" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-22">
+<input checked="checked" id="sd-tab-item-23" name="sd-tab-set-8" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-23">
 (a)</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#load libraries</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> 
@@ -1254,8 +1218,8 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 </div>
 <img alt="../_images/457e922dc6dbb5b53edabaf3ba579ccde4923c0f29c88b345957330d9eef36bc.png" src="../_images/457e922dc6dbb5b53edabaf3ba579ccde4923c0f29c88b345957330d9eef36bc.png" />
 </div>
-<input id="sd-tab-item-23" name="sd-tab-set-7" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-23">
+<input id="sd-tab-item-24" name="sd-tab-set-8" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-24">
 (b)</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> 
@@ -1288,7 +1252,7 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 </div>
 </section>
 <section id="glossary">
-<h2>Glossary<a class="headerlink" href="#glossary" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">1.5. </span>Glossary<a class="headerlink" href="#glossary" title="Link to this heading">#</a></h2>
 <dl class="simple glossary">
 <dt id="term-string">string<a class="headerlink" href="#term-string" title="Link to this term">#</a></dt><dd><p>A data type that stores characters (letters, punctuation, numbers). Numbers stored as a string will be treated as text (i.e., no math operations will work with those numbers).</p>
 </dd>
@@ -1384,15 +1348,15 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-text-and-numbers">Functions, text, and numbers</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-a-program-to-output-text">Writing a program to output text</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numbers-floats-integers-and-arithmetic">Numbers: Floats, integers, and arithmetic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-text-and-numbers">1.1. Functions, text, and numbers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-a-program-to-output-text">1.1.1. Writing a program to output text</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#floats-integers-and-arithmetic">1.1.2. Floats, integers, and arithmetic</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arrays-and-lists">Arrays and lists</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting">Plotting</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">1.2. Variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arrays-and-lists">1.3. Arrays and lists</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting">1.4. Plotting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">1.5. Glossary</a></li>
 </ul>
   </nav></div>
 
