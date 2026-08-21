@@ -4,4 +4,4 @@
 format: jb-book
 root: intro
 chapters:
-  - file: docs/intro_python
+  - file: docs/intro-python

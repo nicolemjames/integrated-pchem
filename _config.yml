@@ -5,10 +5,13 @@ title: Integrated Physical Chemistry
 author: Nicole M. James 
 logo: ""
 
-# Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: off
+  execute_notebooks: force
+
+sphinx:
+  extra_extensions:
+    - sphinx_exercise
 
 # Define the name of the latex output file for PDF builds
 latex:
