@@ -499,11 +499,17 @@ document.write(`
 
 <p class="admonition-title">Solution to<a class="reference internal" href="#hello-world"> Exercise 1.1 (Greet the world)</a></p>
 <section id="solution-content">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-1" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+(a)</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Hello, world!&#39;
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 </div>
@@ -559,8 +565,8 @@ document.write(`
 <p class="admonition-title"><span class="caption-number">Exercise 1.2 </span> (Hello Math)</p>
 <section id="exercise-content">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-1" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-1">
+<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
 (a)</label><div class="sd-tab-content docutils">
 <p>What do you think the Python output will be for each operation below? Make a prediction, then use the code cell below to test your prediction by performing the calculations and printing the outputs.</p>
 <ol class="arabic simple">
@@ -568,14 +574,14 @@ document.write(`
 <li><p>5.0 + 10.0</p></li>
 </ol>
 </div>
-<input id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-2">
+<input id="sd-tab-item-3" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
 (b)</label><div class="sd-tab-content docutils">
 <p>Make a prediction: What do you think would happen if you added a <em>combination</em> of integers and floats?</p>
 <p>Test your prediction by printing one or more calculations in the code cell below.</p>
 </div>
-<input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-3">
+<input id="sd-tab-item-4" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
 (c)</label><div class="sd-tab-content docutils">
 <p>In the code cells below, print:</p>
 <ol class="arabic simple">
@@ -583,8 +589,8 @@ document.write(`
 <li><p>10 raised to the 2nd power</p></li>
 </ol>
 </div>
-<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-4">
+<input id="sd-tab-item-5" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
 (d)</label><div class="sd-tab-content docutils">
 <p>Predict the output of each of the following lines, and then test your predictions by printing the outputs in the code cell below.</p>
 <ol class="arabic simple">
@@ -636,52 +642,54 @@ document.write(`
 <p class="admonition-title">Solution to<a class="reference internal" href="#hello-math"> Exercise 1.2 (Hello Math)</a></p>
 <section id="solution-content">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-5" name="sd-tab-set-2" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-5">
+<input checked="checked" id="sd-tab-item-6" name="sd-tab-set-3" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-6">
 (a)</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1. &quot;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2. &quot;</span><span class="p">,</span> <span class="mf">5.0</span> <span class="o">+</span> <span class="mf">10.0</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;1.  15\n2.  15.0&#39;
-</pre></div>
-</div>
+<ol class="arabic simple">
+<li><p>15</p></li>
+<li><p>15.0</p></li>
+</ol>
 <p>Python outputs an integer (<code class="docutils literal notranslate"><span class="pre">15</span></code>) when two integers are added (<code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">+</span> <span class="pre">10</span></code>); it outputs a float (<code class="docutils literal notranslate"><span class="pre">15.0</span></code>) when two floats are added (<code class="docutils literal notranslate"><span class="pre">5.0</span> <span class="pre">+</span> <span class="pre">10.0</span></code>).</p>
 </div>
-<input id="sd-tab-item-6" name="sd-tab-set-2" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-6">
+<input id="sd-tab-item-7" name="sd-tab-set-3" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-7">
 (b)</label><div class="sd-tab-content docutils">
 <p>I predict it will default to a float. Let’s see:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test: &quot;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">+</span> <span class="mf">10.0</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;test:  15.0&#39;
-</pre></div>
-</div>
+<p>test:  15.0</p>
 <p>Viola, it’s a float! If it defaulted to an integer, information could be lost.</p>
 </div>
-<input id="sd-tab-item-7" name="sd-tab-set-2" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-7">
+<input id="sd-tab-item-8" name="sd-tab-set-3" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-8">
 (c)</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1. &quot;</span><span class="p">,</span> <span class="mi">5</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2. &quot;</span><span class="p">,</span> <span class="mi">10</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;1.  2.5\n2.  100&#39;
-</pre></div>
+<ol class="arabic simple">
+<li><p>2.5</p></li>
+<li><p>100</p></li>
+</ol>
 </div>
-</div>
-<input id="sd-tab-item-8" name="sd-tab-set-2" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-8">
+<input id="sd-tab-item-9" name="sd-tab-set-3" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-9">
 (d)</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1. &quot;</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2. &quot;</span><span class="p">,</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">3</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;3. &quot;</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="mi">3</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;1.  5\n2.  7\n3.  4&#39;
-</pre></div>
-</div>
+<ol class="arabic simple">
+<li><p>5</p></li>
+<li><p>7</p></li>
+<li><p>4</p></li>
+</ol>
 <p>Calculation 1 completes multiplication then subtraction:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}2 \cdot 3 - 1 \\
@@ -739,8 +747,8 @@ document.write(`
 <p class="admonition-title"><span class="caption-number">Exercise 1.3 </span> (Hello Variables)</p>
 <section id="exercise-content">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-9" name="sd-tab-set-3" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-9">
+<input checked="checked" id="sd-tab-item-10" name="sd-tab-set-4" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-10">
 (a)</label><div class="sd-tab-content docutils">
 <p>Following the structure in the example above, calculate and print:</p>
 <ol class="arabic simple">
@@ -754,14 +762,14 @@ document.write(`
 </ul>
 <p><em>Hint:</em> be sure to use different variables for different parameters, don’t just overwrite them (e.g., <code class="docutils literal notranslate"><span class="pre">n_N2</span></code>, <code class="docutils literal notranslate"><span class="pre">n_O2</span></code> instead of just <code class="docutils literal notranslate"><span class="pre">n</span></code>).</p>
 </div>
-<input id="sd-tab-item-10" name="sd-tab-set-3" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-10">
+<input id="sd-tab-item-11" name="sd-tab-set-4" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-11">
 (b)</label><div class="sd-tab-content docutils">
 <p>Add on to your code to calculate the total pressure of the system.</p>
 <p><em>Hint:</em> Recall the law of partial pressures: <span class="math notranslate nohighlight">\(P_\text{total}=P_1+P_2+P_3+...\)</span></p>
 </div>
-<input id="sd-tab-item-11" name="sd-tab-set-3" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-11">
+<input id="sd-tab-item-12" name="sd-tab-set-4" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-12">
 (c)</label><div class="sd-tab-content docutils">
 <p>Uh oh, things are heating up! Update your code to perform the calculations with <span class="math notranslate nohighlight">\(T=500 \text{ K}\)</span></p>
 <p><em>Hint:</em> If you set up and used variables nicely, this should only require one single change!</p>
@@ -781,8 +789,8 @@ document.write(`
 <p class="admonition-title">Solution to<a class="reference internal" href="#hello-var"> Exercise 1.3 (Hello Variables)</a></p>
 <section id="solution-content">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-12" name="sd-tab-set-4" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-12">
+<input checked="checked" id="sd-tab-item-13" name="sd-tab-set-5" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-13">
 (a)</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#define values:</span>
 <span class="n">V</span> <span class="o">=</span> <span class="mi">15</span> <span class="c1">#L</span>
@@ -799,12 +807,11 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P_O2: &quot;</span><span class="p">,</span> <span class="n">P_O2</span><span class="p">,</span> <span class="s2">&quot; atm&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;P_N2:  3.2824  atm\nP_O2:  0.8206  atm&#39;
-</pre></div>
+<p>P_N2:  3.2824  atm
+P_O2:  0.8206  atm</p>
 </div>
-</div>
-<input id="sd-tab-item-13" name="sd-tab-set-4" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-13">
+<input id="sd-tab-item-14" name="sd-tab-set-5" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-14">
 (b)</label><div class="sd-tab-content docutils">
 <p>All we need to do is add the calculation <span class="math notranslate nohighlight">\(P_\text{total}=P_\text{O2}+P_\text{N2}\)</span>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#define values:</span>
@@ -826,12 +833,12 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P(total): &quot;</span><span class="p">,</span> <span class="n">P_tot</span><span class="p">,</span> <span class="s2">&quot; atm&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;P(N2):  3.2824  atm\nP(O2):  0.8206  atm\nP(total):  4.103  atm&#39;
-</pre></div>
+<p>P(N2):  3.2824  atm
+P(O2):  0.8206  atm
+P(total):  4.103  atm</p>
 </div>
-</div>
-<input id="sd-tab-item-14" name="sd-tab-set-4" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-14">
+<input id="sd-tab-item-15" name="sd-tab-set-5" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-15">
 (c)</label><div class="sd-tab-content docutils">
 <p>Because we defined our system parameters as variables and referred to those variables in calculations, we can update the temperature for all calculations simply by updating the definition of <code class="docutils literal notranslate"><span class="pre">T</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#define values:</span>
@@ -853,9 +860,9 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P(total): &quot;</span><span class="p">,</span> <span class="n">P_tot</span><span class="p">,</span> <span class="s2">&quot; atm&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;P(N2):  5.4706666666666655  atm\nP(O2):  1.3676666666666664  atm\nP(total):  6.838333333333332  atm&#39;
-</pre></div>
-</div>
+<p>P(N2):  5.4706666666666655  atm
+P(O2):  1.3676666666666664  atm
+P(total):  6.838333333333332  atm</p>
 </div>
 </div>
 </section>
@@ -941,19 +948,19 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 <p class="admonition-title"><span class="caption-number">Exercise 1.4 </span> (Hello Array)</p>
 <section id="exercise-content">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-15" name="sd-tab-set-5" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-15">
+<input checked="checked" id="sd-tab-item-16" name="sd-tab-set-6" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-16">
 (a)</label><div class="sd-tab-content docutils">
 <p>In the code cell below, use NumPy’s <code class="docutils literal notranslate"><span class="pre">linspace()</span></code> function to create a variable called <code class="docutils literal notranslate"><span class="pre">x_20</span></code> which ranges from  -4 to 4 and has 20 points. Print <code class="docutils literal notranslate"><span class="pre">x_20</span></code> so you can look at it.</p>
 </div>
-<input id="sd-tab-item-16" name="sd-tab-set-5" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-16">
+<input id="sd-tab-item-17" name="sd-tab-set-6" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-17">
 (b)</label><div class="sd-tab-content docutils">
 <p>You could manually count the points to confirm that <code class="docutils literal notranslate"><span class="pre">x_20</span></code> contains 20 objects. Or, you can take advantage of another NumPy function: <a class="reference external" href="https://numpy.org/devdocs/reference/generated/numpy.shape.html">shape</a>. <code class="docutils literal notranslate"><span class="pre">shape()</span></code> returns a <a class="reference internal" href="#term-tuple"><span class="xref std std-term">tuple</span></a>: <code class="docutils literal notranslate"><span class="pre">(m,n)</span></code>, where <em>m</em> is the number of rows in the array and <em>n</em> is the number of columns. The syntax for this function is <code class="docutils literal notranslate"><span class="pre">np.shape(your_array).</span></code></p>
 <p>Use <code class="docutils literal notranslate"><span class="pre">np.shape()</span></code> to verify that <code class="docutils literal notranslate"><span class="pre">x_20</span></code> is indeed 1 dimensional, with 20 entries.</p>
 </div>
-<input id="sd-tab-item-17" name="sd-tab-set-5" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-17">
+<input id="sd-tab-item-18" name="sd-tab-set-6" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-18">
 (c)</label><div class="sd-tab-content docutils">
 <p>Create a new variable, <code class="docutils literal notranslate"><span class="pre">y_20</span></code> defined as <code class="docutils literal notranslate"><span class="pre">y_20</span> <span class="pre">=</span> <span class="pre">x_20+3</span></code>. Use the <code class="docutils literal notranslate"><span class="pre">np.shape()</span></code> function to confirm it has the same dimensions as <code class="docutils literal notranslate"><span class="pre">x_20</span></code>.</p>
 </div>
@@ -972,8 +979,8 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 <p class="admonition-title">Solution to<a class="reference internal" href="#hello-shape"> Exercise 1.4 (Hello Array)</a></p>
 <section id="solution-content">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-18" name="sd-tab-set-6" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-18">
+<input checked="checked" id="sd-tab-item-19" name="sd-tab-set-7" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-19">
 (a)</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x_20</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">x_20</span><span class="p">)</span>
@@ -983,8 +990,8 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 </pre></div>
 </div>
 </div>
-<input id="sd-tab-item-19" name="sd-tab-set-6" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-19">
+<input id="sd-tab-item-20" name="sd-tab-set-7" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-20">
 (b)</label><div class="sd-tab-content docutils">
 <p>This can be done by printing the shape function directly:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">x_20</span><span class="p">))</span>
@@ -1002,8 +1009,8 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 </pre></div>
 </div>
 </div>
-<input id="sd-tab-item-20" name="sd-tab-set-6" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-20">
+<input id="sd-tab-item-21" name="sd-tab-set-7" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-21">
 (c)</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">y_20</span> <span class="o">=</span> <span class="n">x_20</span> <span class="o">+</span> <span class="mi">3</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">y_20</span><span class="p">))</span>
@@ -1026,27 +1033,27 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">#import the libraries we need</span>
-<span class="linenos"> 2</span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> 
-<span class="linenos"> 3</span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span> 
-<span class="linenos"> 4</span>
-<span class="linenos"> 5</span><span class="c1">#get some stuff to plot</span>
-<span class="linenos"> 6</span>
-<span class="linenos"> 7</span><span class="c1">#let the total pressure be constant</span>
-<span class="linenos"> 8</span><span class="n">P_tot</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#atm</span>
-<span class="linenos"> 9</span>
-<span class="linenos">10</span><span class="c1">#let pressure N2 vary from 0-1 atm</span>
-<span class="linenos">11</span><span class="n">P_N2</span> <span class="o">=</span> <span class="mi">1</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1">#atm</span>
-<span class="linenos">12</span>
-<span class="linenos">13</span><span class="c1">#let pressure O2 vary relative to P_N2, to keep total P constant</span>
-<span class="linenos">14</span><span class="n">P_O2</span> <span class="o">=</span> <span class="n">P_tot</span> <span class="o">-</span> <span class="n">P_N2</span> <span class="c1">#atm</span>
-<span class="linenos">15</span>
-<span class="linenos">16</span><span class="c1">#plot the stuff </span>
-<span class="linenos">17</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
-<span class="linenos">18</span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">P_N2</span><span class="p">,</span><span class="n">P_O2</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">)</span>
-<span class="linenos">19</span><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;N2 Pressue (atm)&#39;</span><span class="p">)</span> 
-<span class="linenos">20</span><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;O2 Pressure (atm)&#39;</span><span class="p">)</span> 
-<span class="linenos">21</span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import the libraries we need</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> 
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span> 
+
+<span class="c1">#get some stuff to plot</span>
+
+<span class="c1">#let the total pressure be constant</span>
+<span class="n">P_tot</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#atm</span>
+
+<span class="c1">#let pressure N2 vary from 0-1 atm</span>
+<span class="n">P_N2</span> <span class="o">=</span> <span class="mi">1</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1">#atm</span>
+
+<span class="c1">#let pressure O2 vary relative to P_N2, to keep total P constant</span>
+<span class="n">P_O2</span> <span class="o">=</span> <span class="n">P_tot</span> <span class="o">-</span> <span class="n">P_N2</span> <span class="c1">#atm</span>
+
+<span class="c1">#plot the stuff </span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">P_N2</span><span class="p">,</span><span class="n">P_O2</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;N2 Pressue (atm)&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;O2 Pressure (atm)&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1055,30 +1062,28 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 </div>
 </div>
 <p>Let’s break this down:</p>
-<ul class="simple">
-<li><p><strong>Line 17</strong> calls the matplotlib function <code class="docutils literal notranslate"><span class="pre">figure()</span></code>, which creates a figure window for the plot. We also defined the figure size to be 3 inches x 3 inches; defining the figure size is optional.</p></li>
-<li><p><strong>Line 18</strong> calls the matplotlib function <code class="docutils literal notranslate"><span class="pre">plot()</span></code>, inputs three objects: the first (<code class="docutils literal notranslate"><span class="pre">P_N2</span></code>) is x-axis values, the second (<code class="docutils literal notranslate"><span class="pre">P_O2</span></code>) is y-axis values. The string <code class="docutils literal notranslate"><span class="pre">'o-'</span></code> is optional–it tells <code class="docutils literal notranslate"><span class="pre">plot()</span></code> to display data point markers and a line connecting each data point. This generates the plot in the figure window.</p></li>
-<li><p><strong>Line 19</strong> calls the matplotlib function <code class="docutils literal notranslate"><span class="pre">xlabel()</span></code>, and inputs the x-axis label as a string</p></li>
-<li><p><strong>Line 20</strong> calls the matplotlib function <code class="docutils literal notranslate"><span class="pre">ylabel()</span></code>, and inputs the x-axis label as a string</p></li>
-<li><p><strong>Line 21</strong> calls the matplotlib function <code class="docutils literal notranslate"><span class="pre">show()</span></code>, which displays the figure window and its contents</p></li>
-</ul>
+<p><code class="docutils literal notranslate"><span class="pre">plt.figure()</span></code>calls the <code class="docutils literal notranslate"><span class="pre">figure()</span></code> function from <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code>, which creates a figure window for the plot. We also defined the figure size to be 3 inches x 3 inches. Defining the figure size is optional, but the default starts off unnecessarily large.</p>
+<p><code class="docutils literal notranslate"><span class="pre">plt.plot(P_N2,</span> <span class="pre">P_O2,</span> <span class="pre">'o-')</span></code> plots into the figure window, with <code class="docutils literal notranslate"><span class="pre">P_N2</span></code>as the x-values and <code class="docutils literal notranslate"><span class="pre">P_O2</span></code> as the y-values. The <code class="docutils literal notranslate"><span class="pre">'o-'</span></code> input is optional; it tells <code class="docutils literal notranslate"><span class="pre">plot()</span></code> to display data point markers as circles (<code class="docutils literal notranslate"><span class="pre">o</span></code>) and display a line connecting each point (<code class="docutils literal notranslate"><span class="pre">-</span></code>). For other built-in marker options, see <a class="reference external" href="https://matplotlib.org/stable/api/markers_api.html">the documentation</a>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">plt.xlabel()</span></code>and <code class="docutils literal notranslate"><span class="pre">plt.ylabel()</span></code> display the inputted string as the x-axis or y-axis label, respectively.</p>
+<p><code class="docutils literal notranslate"><span class="pre">plt.show()</span></code> displays the figure window and its contents. In many cases, Python will automatically display these even without this function, but including this function ensures it is displayed.</p>
+<hr class="docutils" />
 <p>If we want to plot multiple curves in the same window, we can do that by using <code class="docutils literal notranslate"><span class="pre">plt.plot()</span></code> multiple times:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> 
-<span class="linenos"> 2</span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span> 
-<span class="linenos"> 3</span>
-<span class="linenos"> 4</span><span class="n">P_tot</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#atm</span>
-<span class="linenos"> 5</span><span class="n">P_N2</span> <span class="o">=</span> <span class="mi">1</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1">#atm</span>
-<span class="linenos"> 6</span><span class="n">P_O2</span> <span class="o">=</span> <span class="n">P_tot</span> <span class="o">-</span> <span class="n">P_N2</span> <span class="c1">#atm</span>
-<span class="linenos"> 7</span><span class="n">P_total</span><span class="o">=</span><span class="n">P_N2</span><span class="o">+</span><span class="n">P_O2</span> <span class="c1">#atm -- to check it is indeed constant</span>
-<span class="linenos"> 8</span>
-<span class="linenos"> 9</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
-<span class="linenos">10</span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">P_N2</span><span class="p">,</span><span class="n">P_O2</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">)</span> <span class="c1">#this is plots one curve</span>
-<span class="linenos">11</span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">P_N2</span><span class="p">,</span><span class="n">P_total</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">)</span> <span class="c1">#this plots another! </span>
-<span class="linenos">12</span><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;N2 Pressue (atm)&#39;</span><span class="p">)</span> 
-<span class="linenos">13</span><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Pressure (atm)&#39;</span><span class="p">)</span> 
-<span class="linenos">14</span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> 
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span> 
+
+<span class="n">P_tot</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#atm</span>
+<span class="n">P_N2</span> <span class="o">=</span> <span class="mi">1</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1">#atm</span>
+<span class="n">P_O2</span> <span class="o">=</span> <span class="n">P_tot</span> <span class="o">-</span> <span class="n">P_N2</span> <span class="c1">#atm</span>
+<span class="n">P_total</span><span class="o">=</span><span class="n">P_N2</span><span class="o">+</span><span class="n">P_O2</span> <span class="c1">#atm -- to check it is indeed constant</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">P_N2</span><span class="p">,</span><span class="n">P_O2</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">)</span> <span class="c1">#this is plots one curve</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">P_N2</span><span class="p">,</span><span class="n">P_total</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">)</span> <span class="c1">#this plots another! </span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;N2 Pressue (atm)&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Pressure (atm)&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1089,24 +1094,24 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 <p>However, if we are doing that we should use a legend to label our curves! Matplotlib also has a function for that: <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html">legend()</a>. There’s a couple ways to use <code class="docutils literal notranslate"><span class="pre">plt.legend()</span></code> to generate a label. One way is to create a list of the curve labels (list of strings), which are inputted to <code class="docutils literal notranslate"><span class="pre">plt.legend()</span></code> in the order the curves are plotted. For example:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> 
-<span class="linenos"> 2</span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span> 
-<span class="linenos"> 3</span>
-<span class="linenos"> 4</span><span class="n">P_tot</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#atm </span>
-<span class="linenos"> 5</span><span class="n">P_N2</span> <span class="o">=</span> <span class="mi">1</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1">#atm</span>
-<span class="linenos"> 6</span><span class="n">P_O2</span> <span class="o">=</span> <span class="n">P_tot</span> <span class="o">-</span> <span class="n">P_N2</span> <span class="c1">#atm</span>
-<span class="linenos"> 7</span><span class="n">P_total</span><span class="o">=</span><span class="n">P_N2</span><span class="o">+</span><span class="n">P_O2</span> <span class="c1">#atm -- to check it is indeed constant</span>
-<span class="linenos"> 8</span>
-<span class="linenos"> 9</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
-<span class="linenos">10</span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">P_N2</span><span class="p">,</span><span class="n">P_O2</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">)</span>
-<span class="linenos">11</span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">P_N2</span><span class="p">,</span><span class="n">P_total</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">)</span>
-<span class="linenos">12</span><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;N2 Pressue (atm)&#39;</span><span class="p">)</span> 
-<span class="linenos">13</span><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Pressure (atm)&#39;</span><span class="p">)</span> 
-<span class="linenos">14</span>
-<span class="linenos">15</span><span class="n">curve_names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;O2&#39;</span><span class="p">,</span> <span class="s1">&#39;Total&#39;</span><span class="p">]</span> 
-<span class="linenos">16</span><span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">curve_names</span><span class="p">)</span>
-<span class="linenos">17</span>
-<span class="linenos">18</span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> 
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span> 
+
+<span class="n">P_tot</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#atm </span>
+<span class="n">P_N2</span> <span class="o">=</span> <span class="mi">1</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1">#atm</span>
+<span class="n">P_O2</span> <span class="o">=</span> <span class="n">P_tot</span> <span class="o">-</span> <span class="n">P_N2</span> <span class="c1">#atm</span>
+<span class="n">P_total</span><span class="o">=</span><span class="n">P_N2</span><span class="o">+</span><span class="n">P_O2</span> <span class="c1">#atm -- to check it is indeed constant</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">P_N2</span><span class="p">,</span><span class="n">P_O2</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">P_N2</span><span class="p">,</span><span class="n">P_total</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;N2 Pressue (atm)&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Pressure (atm)&#39;</span><span class="p">)</span> 
+
+<span class="n">curve_names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;O2&#39;</span><span class="p">,</span> <span class="s1">&#39;Total&#39;</span><span class="p">]</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">curve_names</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1117,23 +1122,23 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 <p>Alternatively, the curve label can be defined within <code class="docutils literal notranslate"><span class="pre">plt.plot()</span></code>. When <code class="docutils literal notranslate"><span class="pre">plt.legend()</span></code> is called, it automatically refers to the the curve legend names as defined in plt.plot(). An advantage of this is you don’t have to make sure you’re manually keeping the order of the legend aligned with the order curves are plotted. For example:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> 
-<span class="linenos"> 2</span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span> 
-<span class="linenos"> 3</span>
-<span class="linenos"> 4</span><span class="n">P_tot</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#atm </span>
-<span class="linenos"> 5</span><span class="n">P_N2</span> <span class="o">=</span> <span class="mi">1</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1">#atm</span>
-<span class="linenos"> 6</span><span class="n">P_O2</span> <span class="o">=</span> <span class="n">P_tot</span> <span class="o">-</span> <span class="n">P_N2</span> <span class="c1">#atm</span>
-<span class="linenos"> 7</span><span class="n">P_total</span><span class="o">=</span><span class="n">P_N2</span><span class="o">+</span><span class="n">P_O2</span> <span class="c1">#atm -- to check it is indeed constant</span>
-<span class="linenos"> 8</span>
-<span class="linenos"> 9</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
-<span class="linenos">10</span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">P_N2</span><span class="p">,</span><span class="n">P_O2</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;O2&#39;</span><span class="p">)</span>
-<span class="linenos">11</span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">P_N2</span><span class="p">,</span><span class="n">P_total</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Total&#39;</span><span class="p">)</span>
-<span class="linenos">12</span><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;N2 Pressue (atm)&#39;</span><span class="p">)</span> 
-<span class="linenos">13</span><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Pressure (atm)&#39;</span><span class="p">)</span> 
-<span class="linenos">14</span>
-<span class="linenos">15</span><span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-<span class="linenos">16</span>
-<span class="linenos">17</span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> 
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span> 
+
+<span class="n">P_tot</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#atm </span>
+<span class="n">P_N2</span> <span class="o">=</span> <span class="mi">1</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1">#atm</span>
+<span class="n">P_O2</span> <span class="o">=</span> <span class="n">P_tot</span> <span class="o">-</span> <span class="n">P_N2</span> <span class="c1">#atm</span>
+<span class="n">P_total</span><span class="o">=</span><span class="n">P_N2</span><span class="o">+</span><span class="n">P_O2</span> <span class="c1">#atm -- to check it is indeed constant</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">P_N2</span><span class="p">,</span><span class="n">P_O2</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;O2&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">P_N2</span><span class="p">,</span><span class="n">P_total</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Total&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;N2 Pressue (atm)&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Pressure (atm)&#39;</span><span class="p">)</span> 
+
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1146,8 +1151,8 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 <p class="admonition-title"><span class="caption-number">Exercise 1.5 </span> (Just Plotting, no Scheming)</p>
 <section id="exercise-content">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-21" name="sd-tab-set-7" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-21">
+<input checked="checked" id="sd-tab-item-22" name="sd-tab-set-8" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-22">
 (a)</label><div class="sd-tab-content docutils">
 <p>Generate a figure that plots <span class="math notranslate nohighlight">\(y(x) = ax^3 + bx^2 + cx + d\)</span> over the range <span class="math notranslate nohighlight">\(x = -5\)</span> to <span class="math notranslate nohighlight">\(x = 5\)</span>, for the following values:</p>
 <p><span class="math notranslate nohighlight">\(a = 3\)</span> <br />
@@ -1156,8 +1161,8 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 <span class="math notranslate nohighlight">\(d = -5\)</span></p>
 <p>Be sure to label your axes, and indicate your data points with markers!</p>
 </div>
-<input id="sd-tab-item-22" name="sd-tab-set-7" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-22">
+<input id="sd-tab-item-23" name="sd-tab-set-8" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-23">
 (b)</label><div class="sd-tab-content docutils">
 <p>Generate a figure and plot the following over the range <span class="math notranslate nohighlight">\(x = -5\)</span> to <span class="math notranslate nohighlight">\(x = 5\)</span>:</p>
 <ol class="arabic simple">
@@ -1189,8 +1194,8 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 <p class="admonition-title">Solution to<a class="reference internal" href="#hello-plots"> Exercise 1.5 (Just Plotting, no Scheming)</a></p>
 <section id="solution-content">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-23" name="sd-tab-set-8" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-23">
+<input checked="checked" id="sd-tab-item-24" name="sd-tab-set-9" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-24">
 (a)</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#load libraries</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> 
@@ -1218,8 +1223,8 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 </div>
 <img alt="../_images/457e922dc6dbb5b53edabaf3ba579ccde4923c0f29c88b345957330d9eef36bc.png" src="../_images/457e922dc6dbb5b53edabaf3ba579ccde4923c0f29c88b345957330d9eef36bc.png" />
 </div>
-<input id="sd-tab-item-24" name="sd-tab-set-8" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-24">
+<input id="sd-tab-item-25" name="sd-tab-set-9" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-25">
 (b)</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> 
