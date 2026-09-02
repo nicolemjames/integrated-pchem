@@ -78,7 +78,7 @@ plt.show()
 
 [31m---------------------------------------------------------------------------[39m
 [31mNameError[39m                                 Traceback (most recent call last)
-[36mCell[39m[36m [39m[32mIn[5][39m[32m, line 43[39m
+[36mCell[39m[36m [39m[32mIn[4][39m[32m, line 43[39m
 [32m     40[39m ax1 = fig.add_subplot([32m1[39m, [32m2[39m, [32m1[39m, projection=[33m'[39m[33m3d[39m[33m'[39m)
 [32m     41[39m ax2 = fig.add_subplot([32m1[39m, [32m2[39m, [32m2[39m, projection=[33m'[39m[33m3d[39m[33m'[39m)
 [32m---> [39m[32m43[39m surface1, zmax1 = plot_state_surface(ax1, T_values, V_values, ideal_pressure, n_1, [43mcurve_volumes[49m)
