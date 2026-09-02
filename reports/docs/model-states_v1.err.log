@@ -1,0 +1,90 @@
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.12/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/opt/conda/lib/python3.12/site-packages/nbclient/client.py", line 1269, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/nbclient/util.py", line 85, in wrapped
+    return just_run(coro(*args, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/nbclient/util.py", line 60, in just_run
+    return loop.run_until_complete(coro)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/nbclient/client.py", line 707, in async_execute
+    await self.async_execute_cell(
+  File "/opt/conda/lib/python3.12/site-packages/nbclient/client.py", line 1025, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/opt/conda/lib/python3.12/site-packages/nbclient/client.py", line 919, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+%matplotlib widget
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+R = 0.08206 # L atm / mol K
+n_1 = 1.25 # mol
+n_2 = 2.5 # mol
+T_values = np.linspace(79, 298, 80) # K
+V_values = np.linspace(0.01, 1.0, 80) # L
+system_volumes = [1.0, 0.1, 0.01] # L
+
+def ideal_pressure(T, V, n):
+    return n * R * T / V
+
+def plot_state_surface(ax, T_values, V_values, pressure_model, n, curve_volumes):
+    T_grid, V_grid = np.meshgrid(T_values, V_values)
+    P_grid = pressure_model(T_grid, V_grid, n)
+
+    surface = ax.plot_surface(T_grid, V_grid, P_grid, cmap='viridis',
+                              alpha=0.4, linewidth=0)
+
+    colors = ['blue', 'orange', 'red']
+    for V, color in zip(system_volumes, colors):
+        P_curve = pressure_model(T_values, V, n)
+        V_curve = np.full_like(T_values, V)
+        ax.plot(T_values, V_curve, P_curve, color=color, linewidth=3,
+                label=f'V = {V:g} L')
+
+    ax.set_xlabel('Temperature (K)')
+    ax.set_ylabel('Volume (L)')
+    ax.set_zlabel('Pressure (atm)')
+    ax.set_yticks([0.01, 0.1, 1.0])
+    ax.view_init(elev=20, azim=35)
+    ax.set_title(f'n = {n:g} mol')
+    ax.legend(loc='upper left')
+    return surface, P_grid.max()
+
+fig = plt.figure(figsize=(12, 5))
+ax1 = fig.add_subplot(1, 2, 1, projection='3d')
+ax2 = fig.add_subplot(1, 2, 2, projection='3d')
+
+surface1, zmax1 = plot_state_surface(ax1, T_values, V_values, ideal_pressure, n_1, curve_volumes)
+surface2, zmax2 = plot_state_surface(ax2, T_values, V_values, ideal_pressure, n_2, curve_volumes)
+
+zmax = max(zmax1, zmax2)
+ax1.set_zlim(0, zmax * 1.05)
+ax2.set_zlim(0, zmax * 1.05)
+
+fig.suptitle('Ideal-gas P(V,T) state surfaces')
+fig.colorbar(surface2, ax=[ax1, ax2], shrink=0.6, pad=0.08, label='Pressure (atm)')
+plt.show()
+
+------------------
+
+[31m---------------------------------------------------------------------------[39m
+[31mNameError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[5][39m[32m, line 43[39m
+[32m     40[39m ax1 = fig.add_subplot([32m1[39m, [32m2[39m, [32m1[39m, projection=[33m'[39m[33m3d[39m[33m'[39m)
+[32m     41[39m ax2 = fig.add_subplot([32m1[39m, [32m2[39m, [32m2[39m, projection=[33m'[39m[33m3d[39m[33m'[39m)
+[32m---> [39m[32m43[39m surface1, zmax1 = plot_state_surface(ax1, T_values, V_values, ideal_pressure, n_1, [43mcurve_volumes[49m)
+[32m     44[39m surface2, zmax2 = plot_state_surface(ax2, T_values, V_values, ideal_pressure, n_2, curve_volumes)
+[32m     46[39m zmax = [38;5;28mmax[39m(zmax1, zmax2)
+
+[31mNameError[39m: name 'curve_volumes' is not defined
+NameError: name 'curve_volumes' is not defined
+
