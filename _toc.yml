@@ -7,3 +7,4 @@ defaults:
   numbered: true
 chapters:
   - file: docs/intro-python
+  - file: docs/model-states_v1
