@@ -37,14 +37,6 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/exercise.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster.custom.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster.bundle.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-shadow.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-punk.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-noir.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-light.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-borderless.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/micromodal.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- So that users can add custom icons -->
@@ -53,17 +45,12 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
-    <script src="../_static/jquery.js?v=5d32c60e"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
-    <script src="../_static/js/hoverxref.js"></script>
-    <script src="../_static/js/tooltipster.bundle.min.js"></script>
-    <script src="../_static/js/micromodal.min.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -74,6 +61,9 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="../_static/tippy/docs/intro-python.06046085-f046-482f-b15a-1e922540f3d0.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/intro-python';</script>
@@ -450,14 +440,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <hr class="docutils" />
-<p>authors:</p>
-<ul class="simple">
-<li><p>name: Nicole M. James</p></li>
-<li><p>name: Ivan Bondarenko</p></li>
-</ul>
-<hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="intro-to-python">
+  <section class="tex2jax_ignore mathjax_ignore" id="intro-to-python">
 <span id="intro-pyth"></span><h1><span class="section-number">1. </span>Intro to Python<a class="headerlink" href="#intro-to-python" title="Link to this heading">#</a></h1>
 <div class="attention admonition">
 <p class="admonition-title">Section Goals:</p>
@@ -473,8 +456,8 @@
 <section id="writing-a-program-to-output-text">
 <span id="print-strings"></span><h3><span class="section-number">1.1.1. </span>Writing a program to output text<a class="headerlink" href="#writing-a-program-to-output-text" title="Link to this heading">#</a></h3>
 <p>The first program that many people learn to write is a “Hello, world!” program, which performs the function of outputting the phrase “Hello, world!”</p>
-<p>To do so, we need the <code class="docutils literal notranslate"><span class="pre">print()</span></code> <a class="hxr-hoverxref hxr-tooltip reference internal" href="#term-function"><span class="xref std std-term">function</span></a>. <code class="docutils literal notranslate"><span class="pre">print()</span></code> outputs whatever its object is. Similar to a mathematical function (<span class="math notranslate nohighlight">\(f(x)\)</span>), the function object is placed in the parentheses (<code class="docutils literal notranslate"><span class="pre">print(x)</span></code>).</p>
-<p>For a “Hello, world!” program, the object is text data stored as a <a class="hxr-hoverxref hxr-tooltip reference internal" href="#term-string"><span class="xref std std-term">string</span></a> data type. In Python, strings are indicated using either single (<code class="docutils literal notranslate"><span class="pre">'</span></code>) or double (<code class="docutils literal notranslate"><span class="pre">&quot;</span></code>) quotations marks.</p>
+<p>To do so, we need the <code class="docutils literal notranslate"><span class="pre">print()</span></code> <a class="reference internal" href="#term-function"><span class="xref std std-term">function</span></a>. <code class="docutils literal notranslate"><span class="pre">print()</span></code> outputs whatever its object is. Similar to a mathematical function (<span class="math notranslate nohighlight">\(f(x)\)</span>), the function object is placed in the parentheses (<code class="docutils literal notranslate"><span class="pre">print(x)</span></code>).</p>
+<p>For a “Hello, world!” program, the object is text data stored as a <a class="reference internal" href="#term-string"><span class="xref std std-term">string</span></a> data type. In Python, strings are indicated using either single (<code class="docutils literal notranslate"><span class="pre">'</span></code>) or double (<code class="docutils literal notranslate"><span class="pre">&quot;</span></code>) quotations marks.</p>
 <p>Let’s see it in action:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -534,10 +517,10 @@
 </section>
 <section id="floats-integers-and-arithmetic">
 <span id="math-nums"></span><h3><span class="section-number">1.1.2. </span>Floats, integers, and arithmetic<a class="headerlink" href="#floats-integers-and-arithmetic" title="Link to this heading">#</a></h3>
-<p>Numerical data is also very useful.<a class="footnote-reference brackets" href="#nums-useful" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> Numbers can be stored as an <a class="hxr-hoverxref hxr-tooltip reference internal" href="#term-integer"><span class="xref std std-term">integer</span></a> or <a class="hxr-hoverxref hxr-tooltip reference internal" href="#term-float"><span class="xref std std-term">float</span></a> data type.  Python can also perform several arithmetic operations directly, much like a calculator. Common operators are summarized in <a class="hxr-hoverxref hxr-tooltip reference internal" href="#math-operators"><span class="std std-numref">Table 1.1</span></a>.</p>
+<p>Numerical data is also very useful.<a class="footnote-reference brackets" href="#nums-useful" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> Numbers can be stored as an <a class="reference internal" href="#term-integer"><span class="xref std std-term">integer</span></a> or <a class="reference internal" href="#term-float"><span class="xref std std-term">float</span></a> data type.  Python can also perform several arithmetic operations directly, much like a calculator. Common operators are summarized in <a class="reference internal" href="#math-operators"><span class="std std-numref">Table 1.1</span></a>.</p>
 <div class="hint margin simple admonition">
 <p class="admonition-title">Side Note</p>
-<p>Python can also directly handle <a class="hxr-hoverxref hxr-tooltip reference internal" href="#term-integer-division"><span class="xref std std-term">integer division</span></a> and <a class="hxr-hoverxref hxr-tooltip reference internal" href="#term-modulus"><span class="xref std std-term">modulus</span></a> operations.</p>
+<p>Python can also directly handle <a class="reference internal" href="#term-integer-division"><span class="xref std std-term">integer division</span></a> and <a class="reference internal" href="#term-modulus"><span class="xref std std-term">modulus</span></a> operations.</p>
 </div>
 <div class="pst-scrollable-table-container"><table class="table" id="math-operators">
 <caption><span class="caption-number">Table 1.1 </span><span class="caption-text">Python syntax for common mathematical operators</span><a class="headerlink" href="#math-operators" title="Link to this table">#</a></caption>
@@ -731,7 +714,7 @@
 </section>
 <section id="variables">
 <span id="var"></span><h2><span class="section-number">1.2. </span>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
-<p>In programming, a <a class="hxr-hoverxref hxr-tooltip reference internal" href="#term-variable"><span class="xref std std-term">variable</span></a> stores an object (string, integer, float, etc). Once a variable is assigned a value, it retains that value throughout a session until it is changed.</p>
+<p>In programming, a <a class="reference internal" href="#term-variable"><span class="xref std std-term">variable</span></a> stores an object (string, integer, float, etc). Once a variable is assigned a value, it retains that value throughout a session until it is changed.</p>
 <p>Using variables instead of hardcoding in a specific value makes it easier to write, read, and update code. By assigning a value to a variable and then referring to the variable throughout, the value can be updated everywhere i the code at once by simply updating the definition.</p>
 <p>For example:</p>
 <div class="hint margin simple admonition">
@@ -888,7 +871,7 @@ P(total):  6.838333333333332  atm</p>
 </section>
 <section id="arrays-and-lists">
 <span id="arr-list"></span><h2><span class="section-number">1.3. </span>Arrays and lists<a class="headerlink" href="#arrays-and-lists" title="Link to this heading">#</a></h2>
-<p>So far we have used <a class="hxr-hoverxref hxr-tooltip reference internal" href="#term-scalar-variable"><span class="xref std std-term">scalar variable</span></a>s. As you might imagine, there are many situations where it is useful for a variable to represent a collection of values. This can be done using an <a class="hxr-hoverxref hxr-tooltip reference internal" href="#term-array"><span class="xref std std-term">array</span></a> or a <a class="hxr-hoverxref hxr-tooltip reference internal" href="#term-list"><span class="xref std std-term">list</span></a>. Similar to strings, floats, and integers, the list data-type is pre-installed in Python directly.</p>
+<p>So far we have used <a class="reference internal" href="#term-scalar-variable"><span class="xref std std-term">scalar variable</span></a>s. As you might imagine, there are many situations where it is useful for a variable to represent a collection of values. This can be done using an <a class="reference internal" href="#term-array"><span class="xref std std-term">array</span></a> or a <a class="reference internal" href="#term-list"><span class="xref std std-term">list</span></a>. Similar to strings, floats, and integers, the list data-type is pre-installed in Python directly.</p>
 <p>Lists can de defined using square brackets (<code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code>). For example:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -910,8 +893,8 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 </div>
 </div>
 </div>
-<p>In contrast, arrays are <em>not</em> pre-installed. To use these, we need to load a <a class="hxr-hoverxref hxr-tooltip reference internal" href="#term-coding-library"><span class="xref std std-term">coding library</span></a>. By loading a coding library, we load in definitions of functions and data types that we can use without having to define them ourselves.</p>
-<p>The <a class="reference external" href="https://numpy.org/">NumPy</a><a class="footnote-reference brackets" href="#numpy" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> library is very useful for scientific calculations. Its array class enables mathematical calculations to be applied to the entire collection, can be used in plotting, etc. NumPy also contains a number of functions that can be used to generate an array; several of the more common ones are summarized in <a class="hxr-hoverxref hxr-tooltip reference internal" href="#numpy-arrays"><span class="std std-numref">Table 1.2</span></a></p>
+<p>In contrast, arrays are <em>not</em> pre-installed. To use these, we need to load a <a class="reference internal" href="#term-coding-library"><span class="xref std std-term">coding library</span></a>. By loading a coding library, we load in definitions of functions and data types that we can use without having to define them ourselves.</p>
+<p>The <a class="reference external" href="https://numpy.org/">NumPy</a><a class="footnote-reference brackets" href="#numpy" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> library is very useful for scientific calculations. Its array class enables mathematical calculations to be applied to the entire collection, can be used in plotting, etc. NumPy also contains a number of functions that can be used to generate an array; several of the more common ones are summarized in <a class="reference internal" href="#numpy-arrays"><span class="std std-numref">Table 1.2</span></a></p>
 <div class="hint margin simple admonition">
 <p class="admonition-title">Side Note</p>
 <p>Note that NumPy’s <code class="docutils literal notranslate"><span class="pre">arange()</span></code> function includes the start value, but stops one shy of the stop value. The <code class="docutils literal notranslate"><span class="pre">linspace()</span></code> function includes both.</p>
@@ -974,7 +957,7 @@ mixed:  [1.11, 1.12, 1.14, 1.15, &#39;etc.&#39;]
 <input id="sd-tab-item-17" name="sd-tab-set-6" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-17">
 (b)</label><div class="sd-tab-content docutils">
-<p>You could manually count the points to confirm that <code class="docutils literal notranslate"><span class="pre">x_20</span></code> contains 20 objects. Or, you can take advantage of another NumPy function: <a class="reference external" href="https://numpy.org/devdocs/reference/generated/numpy.shape.html">shape</a>. <code class="docutils literal notranslate"><span class="pre">shape()</span></code> returns a <a class="hxr-hoverxref hxr-tooltip reference internal" href="#term-tuple"><span class="xref std std-term">tuple</span></a>: <code class="docutils literal notranslate"><span class="pre">(m,n)</span></code>, where <em>m</em> is the number of rows in the array and <em>n</em> is the number of columns. The syntax for this function is <code class="docutils literal notranslate"><span class="pre">np.shape(your_array).</span></code></p>
+<p>You could manually count the points to confirm that <code class="docutils literal notranslate"><span class="pre">x_20</span></code> contains 20 objects. Or, you can take advantage of another NumPy function: <a class="reference external" href="https://numpy.org/devdocs/reference/generated/numpy.shape.html">shape</a>. <code class="docutils literal notranslate"><span class="pre">shape()</span></code> returns a <a class="reference internal" href="#term-tuple"><span class="xref std std-term">tuple</span></a>: <code class="docutils literal notranslate"><span class="pre">(m,n)</span></code>, where <em>m</em> is the number of rows in the array and <em>n</em> is the number of columns. The syntax for this function is <code class="docutils literal notranslate"><span class="pre">np.shape(your_array).</span></code></p>
 <p>Use <code class="docutils literal notranslate"><span class="pre">np.shape()</span></code> to verify that <code class="docutils literal notranslate"><span class="pre">x_20</span></code> is indeed 1 dimensional, with 20 entries.</p>
 </div>
 <input id="sd-tab-item-18" name="sd-tab-set-6" type="radio">
