@@ -1,0 +1,12 @@
+{%- if meta is defined and meta.get('author') %}
+  {%- set current_author = meta.get('author') %}
+{%- else %}
+  {%- set current_author = author %}
+{%- endif %}
+
+<div class="copyright">
+  <p>
+    &#169; Copyright {{ copyright }}.<br/>
+    Written by {{ current_author }}.
+  </p>
+</div>

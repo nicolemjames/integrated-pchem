@@ -2,7 +2,6 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Integrated Physical Chemistry
-author: Nicole M. James
 logo: ""
 copyright: "2026"
 
@@ -15,6 +14,9 @@ sphinx:
     - sphinx_exercise
     - sphinx_tippy
   config:
+    templates_path: ["_templates"]
+    html_css_files:
+      - "https://unpkg.com/tippy.js@6/themes/light-border.css"
     tippy_props:
       placement: "top"
       interactive: true
