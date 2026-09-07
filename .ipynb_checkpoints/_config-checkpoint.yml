@@ -13,24 +13,11 @@ execute:
 sphinx:
   extra_extensions:
     - sphinx_exercise
-    - hoverxref.extension
+    - sphinx_tippy
   config:
-    hoverxref_auto_ref: true
-    hoverxref_domains:
-      - std
-    hoverxref_roles:
-      - term
-      - ref
-      - doc
-      - cite
-      - numref
-    hoverxref_role_types:
-      term: tooltip       
-      ref: tooltip
-      doc: tooltip
-      cite: tooltip
-      numref: tooltip
-    hoverxref_mathjax: true 
+    tippy_props:
+      placement: "top"
+      interactive: true
 
 # Define the name of the latex output file for PDF builds
 latex:
