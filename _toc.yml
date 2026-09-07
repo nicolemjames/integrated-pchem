@@ -5,6 +5,12 @@ format: jb-book
 root: intro
 defaults:
   numbered: true
-chapters:
-  - file: docs/intro-python
-  - file: docs/model-states_v1
+
+parts:
+  - caption: Introduction
+    chapters:
+      - file: docs/intro-python
+
+  - caption: Modelling States
+    chapters:
+      - file: docs/mechanical-properties_2026 09 07
