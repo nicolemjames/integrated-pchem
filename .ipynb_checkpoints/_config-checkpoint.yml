@@ -18,6 +18,12 @@ sphinx:
     tippy_props:
       placement: "top"
       interactive: true
+      theme: "light-border"
+    tippy_skip_anchor_classes:
+      - "headerlink"
+      - "sd-stretched-link"
+      - "exercise"
+      - "solution"
 
 # Define the name of the latex output file for PDF builds
 latex:
