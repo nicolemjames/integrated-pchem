@@ -1,12 +1,14 @@
-{%- if meta is defined and meta.get('author') %}
-  {%- set current_author = meta.get('author') %}
-{%- else %}
-  {%- set current_author = author %}
-{%- endif %}
+{%- set page_author = meta.get('author') if meta and meta.get('author') else author -%}
+{%- set base_year = meta.get('author_year') if meta and meta.get('author_year') else "2026" -%}
 
 <div class="copyright">
   <p>
-    &#169; Copyright {{ copyright }}.<br/>
-    Written by {{ current_author }}.
+    Copyright (CC BY-NC), {{ base_year }}<br/>
+    By {{ page_author }} ({{ base_year }})
+    {%- if meta and meta.get('revisions') -%}
+      {%- for rev in meta.get('revisions') -%}
+        , revised by {{ rev.author }} ({{ rev.year }})
+      {%- endfor -%}
+    {%- endif -%}
   </p>
 </div>
