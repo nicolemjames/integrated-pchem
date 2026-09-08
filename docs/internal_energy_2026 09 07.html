@@ -1,0 +1,715 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>3. Internal Energy (U) &#8212; Integrated Physical Chemistry</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/tippy.js@6/themes/light-border.css" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="../_static/tippy/docs/internal_energy_2026 09 07.4e23c00c-dad4-4651-bf0d-21e1cbf40d2f.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/internal_energy_2026 09 07';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="../_static/collapse_footnotes.js?v=db66fd7e"></script>
+    <script src="../_static/.ipynb_checkpoints/collapse_footnotes-checkpoint.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="2. Mechanical Properties (P,V,n)" href="mechanical-properties_2026%2009%2007.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Integrated Physical Chemistry</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Integrated Physical Chemistry
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="intro-python.html">1. Intro to Python</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Modelling States</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="mechanical-properties_2026%2009%2007.html">2. Mechanical Properties (P,V,n)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Internal Energy (U)</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/nicolemjames/integrated-pchem/main?urlpath=lab/tree/docs/internal_energy_2026 09 07.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/docs/internal_energy_2026 09 07.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Internal Energy (U)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#translational-energy-states">3.1. Translational Energy States</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">3.2. Glossary</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="internal-energy-u">
+<span id="ch-3"></span><h1><span class="section-number">3. </span>Internal Energy (U)<a class="headerlink" href="#internal-energy-u" title="Link to this heading">#</a></h1>
+<p>The energy contained within the system is the <a class="reference internal" href="#term-internal-energy"><span class="xref std std-term">internal energy</span></a>. An atom or molecule’s internal energy is determined by the energy states it occupies. There are five main categories of energy states: <a class="reference internal" href="#term-nuclear"><span class="xref std std-term">nuclear</span></a>, <a class="reference internal" href="#term-translational"><span class="xref std std-term">translational</span></a>, <a class="reference internal" href="#term-rotational"><span class="xref std std-term">rotational</span></a>, <a class="reference internal" href="#term-vibrational"><span class="xref std std-term">vibrational</span></a>, and <a class="reference internal" href="#term-electronic"><span class="xref std std-term">electronic</span></a>.</p>
+<p>Because it requires an extremely large amount of energy to excite a nucleus from its ground energy state to its first excited state<a class="footnote-reference brackets" href="#nuclear-excite" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>, we will assume all atoms are in their nuclear ground state and not speak of them any further.</p>
+<p>Thus, we can describe the total internal energy of a system as the sum of the internal energy contributed by each category:</p>
+<div class="math notranslate nohighlight">
+\[U_\mathrm{total} = U_\mathrm{trans} + U_\mathrm{rot} + U_\mathrm{vib} + U_\mathrm{elec}\]</div>
+<section id="translational-energy-states">
+<span id="trans"></span><h2><span class="section-number">3.1. </span>Translational Energy States<a class="headerlink" href="#translational-energy-states" title="Link to this heading">#</a></h2>
+<p>There are two key models for the internal (kinetic) energy of translation:</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Classical Mechanics</div>
+<p class="sd-card-text">Developed through observation and empirical measurement of moving objects<a class="footnote-reference brackets" href="#ke-classical" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>:</p>
+<div class="math notranslate nohighlight">
+\[\mathrm{U_{trans}} = \frac{1}{2}m\vec{v}^2\]</div>
+<p class="sd-card-text">where:</p>
+<ul class="simple">
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(m\)</span> is the particle mass</p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\vec{v}\)</span> is the particle velocity, a continuous quantity</p></li>
+</ul>
+<p class="sd-card-text">Note that <span class="math notranslate nohighlight">\(\vec{v} = \sqrt{v_x^2+v_y^2+v_z^2}\)</span>, where <span class="math notranslate nohighlight">\(v_i\)</span> indicates the velocity in the <span class="math notranslate nohighlight">\(i\)</span>-direction</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Quantum Mechanics</div>
+<p class="sd-card-text">Developed through applying quantum theory to describe a particle confined to a 3-dimensional box:
+$<span class="math notranslate nohighlight">\(\mathrm{U_{trans}} = \frac{h^2}{8m} \left( \frac{n^2_x}{L^2_x} + \frac{n^2_y}{L^2_y} + \frac{n^2_z}{L^2_z} \right) \)</span>$</p>
+<p class="sd-card-text">where:</p>
+<ul class="simple">
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(h\)</span> is <a class="reference internal" href="#term-Planck-s-constant"><span class="xref std std-term">Planck’s constant</span></a></p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(m\)</span> is the particle mass</p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(L_x\)</span>, <span class="math notranslate nohighlight">\(L_y\)</span>, <span class="math notranslate nohighlight">\(L_z\)</span> are the <span class="math notranslate nohighlight">\(x\)</span>-, <span class="math notranslate nohighlight">\(y\)</span>-, and <span class="math notranslate nohighlight">\(z\)</span>-direction box lengths, respectively</p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(n_x\)</span>, <span class="math notranslate nohighlight">\(n_y\)</span>, <span class="math notranslate nohighlight">\(n_z\)</span> are translational quantum numbers, which can take integer values <span class="math notranslate nohighlight">\(\geq 1\)</span></p></li>
+</ul>
+<p class="sd-card-text">Note that each integer <span class="math notranslate nohighlight">\(n_i\)</span> corresponds to a unique velocity in the <span class="math notranslate nohighlight">\(i\)</span>-direction.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Note that the classical model describes translational energy states as continuous because <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(\vec{v}\)</span> are continuous. Energy states can be indexed by a unique combination of <span class="math notranslate nohighlight">\((v_x, v_y, v_z)\)</span>. In contrast, the quantum model describes translational energy states as quantized, based on the integer translational quantum numbers <span class="math notranslate nohighlight">\(n_x\)</span>, <span class="math notranslate nohighlight">\(n_y\)</span>, and <span class="math notranslate nohighlight">\(n_z\)</span>. How significant is this difference? Let’s investigate in the exercise below!</p>
+<div class="exercise admonition" id="neon-trans">
+
+<p class="admonition-title"><span class="caption-number">Exercise 3.1 </span> (Neon translating in a box)</p>
+<section id="exercise-content">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+(a)</label><div class="sd-tab-content docutils">
+<p>Using the 3-dimensional quantum particle in a box model to approximate the translational energy levels of a single neon atom. Let <span class="math notranslate nohighlight">\(L_x = L_y = L_z = 3.3\cdot 10^{-9}\, \mathrm{m}\)</span> <a class="footnote-reference brackets" href="#cube-size" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a>. Create a 2-panel subplot with:</p>
+<ul class="simple">
+<li><p>(i) A scatterplot of Energy (J) vs translational energy state, for the first 10 translational energy states: index each state by <span class="math notranslate nohighlight">\(n_x\)</span>, while holding <span class="math notranslate nohighlight">\(n_y = n_z = 1\)</span></p></li>
+<li><p>(ii) A bar plot of the change in Energy (J) vs. excitation, for the first three excitations:</p>
+<ul>
+<li><p>1st excitation: <span class="math notranslate nohighlight">\(U (\mathrm{n_x = 2, n_y=1, n_z=1}) - U(\mathrm{n_x = 1, n_y=1, n_z=1})\)</span></p></li>
+<li><p>2nd excitation: <span class="math notranslate nohighlight">\(U (\mathrm{n_x = 3, n_y=1, n_z=1}) - U(\mathrm{n_x = 2, n_y=1, n_z=1})\)</span></p></li>
+<li><p>3rd excitation: <span class="math notranslate nohighlight">\(U (\mathrm{n_x = 4, n_y=1, n_z=1}) - U(\mathrm{n_x = 3, n_y=1, n_z=1})\)</span></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+(b)</label><div class="sd-tab-content docutils">
+<p>What does the answer to (a) suggest about the difference between using the classical vs. quantum models for translational energies?</p>
+</div>
+</div>
+</section>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#your answer here!</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="solution dropdown simple admonition" id="neon-trans-soln">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#neon-trans"> Exercise 3.1 (Neon translating in a box)</a></p>
+<section id="solution-content">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+(a)</label><div class="sd-tab-content docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="c1">#(a)</span>
+
+<span class="n">L</span> <span class="o">=</span> <span class="mf">3.3E-9</span> <span class="c1">#m </span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="mf">3.35E-26</span> <span class="c1">#kg (Neon atom)</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mf">6.626E-34</span> <span class="c1">#Js </span>
+
+<span class="n">nx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">ny</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">nz</span> <span class="o">=</span> <span class="n">ny</span>
+
+<span class="n">U_quantum</span> <span class="o">=</span> <span class="n">h</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="mi">8</span><span class="o">*</span><span class="n">m</span><span class="o">*</span><span class="n">L</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">nx</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">ny</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">nz</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">ncols</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span> <span class="n">U_quantum</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">)</span> 
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Energy (J)&quot;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;$n_x$&quot;</span><span class="p">)</span>
+
+<span class="n">x_diffs</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1st&#39;</span><span class="p">,</span> <span class="s1">&#39;2nd&#39;</span><span class="p">,</span> <span class="s1">&#39;3rd&#39;</span><span class="p">]</span>
+<span class="n">y_diffs</span> <span class="o">=</span> <span class="p">[</span><span class="n">U_quantum</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">U_quantum</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">U_quantum</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">-</span><span class="n">U_quantum</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">U_quantum</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">-</span><span class="n">U_quantum</span><span class="p">[</span><span class="mi">2</span><span class="p">]]</span>
+
+<span class="n">ax2</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x_diffs</span><span class="p">,</span><span class="n">y_diffs</span><span class="p">)</span> 
+<span class="c1">#ax2.tick_params(axis=&#39;x&#39;, rotation=20)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Energy (J)&quot;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Excitation&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="../_images/61ef24d51fa3c97087c32432442fe5b74d831b92a3b886e647fad4e0d57cc49a.png" src="../_images/61ef24d51fa3c97087c32432442fe5b74d831b92a3b886e647fad4e0d57cc49a.png" />
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+(b)</label><div class="sd-tab-content docutils">
+<p>The difference in energy between translational levels is <em>very</em> small (i.e., negligible). It’s reasonable to model the system as continuous (i.e., classically).</p>
+</div>
+</div>
+</section>
+</div>
+</section>
+<section id="glossary">
+<h2><span class="section-number">3.2. </span>Glossary<a class="headerlink" href="#glossary" title="Link to this heading">#</a></h2>
+<dl class="simple glossary">
+<dt id="term-internal-energy">internal energy<a class="headerlink" href="#term-internal-energy" title="Link to this term">#</a></dt><dd><p>The energy is the total kinetic and potential energy defined by and contained within a system, irrespective of external frames of reference. For example, a balloon of air tied to a fence and a balloon of air in a moving car have different kinetic energies relative to an inidivual observer walking down the street. The internal energy reflects only the system energy relative to its own coordinate system and state variables.</p>
+</dd>
+<dt id="term-nuclear">nuclear<a class="headerlink" href="#term-nuclear" title="Link to this term">#</a></dt><dd><p>Nuclear energy levels describe the quantized energy states that nucleons can occupy.</p>
+</dd>
+<dt id="term-translational">translational<a class="headerlink" href="#term-translational" title="Link to this term">#</a></dt><dd><p>Translational energy levels are the allowed kinetic energy states associated with translational motion.</p>
+</dd>
+<dt id="term-rotational">rotational<a class="headerlink" href="#term-rotational" title="Link to this term">#</a></dt><dd><p>Rotational energy levels are the allowed energy states associated with rotational motion.</p>
+</dd>
+<dt id="term-vibrational">vibrational<a class="headerlink" href="#term-vibrational" title="Link to this term">#</a></dt><dd><p>Vibrational energy levels are the allowed energy states associated with rotational motion.</p>
+</dd>
+<dt id="term-electronic">electronic<a class="headerlink" href="#term-electronic" title="Link to this term">#</a></dt><dd><p>Electronic energy levels are the allowed energy states associated with electronic transitions.</p>
+</dd>
+<dt id="term-Planck-s-constant">Planck’s constant<a class="headerlink" href="#term-Planck-s-constant" title="Link to this term">#</a></dt><dd><p>Quantum proportionality constant between energy and wavelength: <span class="math notranslate nohighlight">\(6.626 \cdot10^{−34}\, \mathrm{J\cdot Hz^{−1}}\)</span></p>
+</dd>
+</dl>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="nuclear-excite" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>on the order of the thermal energy available at temperatures on the order of <span class="math notranslate nohighlight">\(10^{10}\, \mathrm{K}\)</span>.</p>
+</aside>
+<aside class="footnote brackets" id="ke-classical" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>This makes it sound very simple, but actually it involves a sizeable amount of drama. For a jaunt down the rabbit hole, see <a class="reference external" href="https://aip.brightspotcdn.com/PTO.v59.i10.31_1.online.pdf">this article</a>.</p>
+</aside>
+<aside class="footnote brackets" id="cube-size" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">3</a><span class="fn-bracket">]</span></span>
+<p>at standard temperature and pressure, 1 mol of an ideal gas occupies a volume of 22.4L Dividing the space equally results in each atom existing in a “box” of length 3.3\cdot 10^{-9}, \mathrm{m}, which seems as good an estimate as any.</p>
+</aside>
+</aside>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "nicolemjames/integrated-pchem",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="mechanical-properties_2026%2009%2007.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Mechanical Properties (P,V,n)</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#translational-energy-states">3.1. Translational Energy States</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">3.2. Glossary</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    <div class="copyright">
+  <p>
+    Copyright (CC BY-NC), 2026<br/>
+    By Nicole M. James (2026)</p>
+</div>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
