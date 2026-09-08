@@ -15,7 +15,7 @@ sphinx:
     - sphinx_exercise
     - sphinx_tippy
   config:
-  tippy_enable_mathjax: true
+    tippy_enable_mathjax: true
     templates_path: ["_templates"]
     html_css_files:
       - "https://unpkg.com/tippy.js@6/themes/light-border.css"
