@@ -17,6 +17,9 @@ sphinx:
   config:
     tippy_enable_mathjax: true
     templates_path: ["_templates"]
+    html_static_path: ["_static"]
+    html_js_files:
+      - "collapse_footnotes.js"
     html_css_files:
       - "https://unpkg.com/tippy.js@6/themes/light-border.css"
     tippy_props:
