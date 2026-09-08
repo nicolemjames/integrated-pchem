@@ -14,3 +14,4 @@ parts:
   - caption: Modelling States
     chapters:
       - file: docs/mechanical-properties_2026 09 07
+      - file: docs/internal_energy_2026 09 07
