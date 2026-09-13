@@ -15,3 +15,7 @@ parts:
     chapters:
       - file: docs/mechanical-properties_2026 09 07
       - file: docs/internal_energy_2026 09 07
+      
+  - caption: Appendices
+    chapters:
+    - file: docs/wave-mechanics

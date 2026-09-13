@@ -20,6 +20,7 @@ sphinx:
     html_static_path: ["_static"]
     html_js_files:
       - "collapse_footnotes.js"
+      - "custom.js"
     html_css_files:
       - "https://unpkg.com/tippy.js@6/themes/light-border.css"
     tippy_props:
@@ -48,6 +49,8 @@ repository:
 html:
   use_issues_button: false
   use_repository_button: false
+  css_files:
+    - _static/custom.css
 
 launch_buttons:
   notebook_interface: "jupyterlab"
