@@ -20,12 +20,40 @@ document.addEventListener("DOMContentLoaded", function () {
         const href = link.getAttribute("href");
         if (!href || !href.includes("#")) return;
 
-        link.addEventListener("mouseenter", (e) => {
-            const targetId = href.split("#")[1];
-            const targetEl = document.getElementById(targetId);
+        link.addEventListener("mouseenter", async (e) => {
+            const [urlPath, targetId] = href.split("#");
+            if (!targetId) return;
+
+            let targetEl = document.getElementById(targetId);
+
+            if (!targetEl && urlPath) {
+                try {
+                    const res = await fetch(urlPath);
+                    const html = await res.text();
+                    const doc = new DOMParser().parseFromString(html, "text/html");
+                    targetEl = doc.getElementById(targetId);
+                } catch (err) {
+                    return;
+                }
+            }
 
             if (targetEl) {
-                popover.innerHTML = targetEl.innerHTML;
+                let content = "";
+
+                if (targetEl.tagName === "DT") {
+                    const dd = targetEl.nextElementSibling;
+                    content = `<strong>${targetEl.innerText}</strong><br>${dd ? dd.innerHTML : ''}`;
+                } 
+                else if (targetEl.tagName === "SECTION" || targetEl.classList.contains("section")) {
+                    const heading = targetEl.querySelector("h1, h2, h3, h4, h5");
+                    const firstP = targetEl.querySelector("p");
+                    content = `<strong>${heading ? heading.innerText : ''}</strong><br>${firstP ? firstP.innerHTML : ''}`;
+                } 
+                else {
+                    content = targetEl.innerHTML;
+                }
+
+                popover.innerHTML = content;
                 popover.style.display = "block";
 
                 const rect = link.getBoundingClientRect();
