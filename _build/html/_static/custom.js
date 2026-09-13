@@ -16,3 +16,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+require.config({
+    paths: {
+        "jupyter-matplotlib": "https://unpkg.com/jupyter-matplotlib@^0.11.0/dist/index"
+    }
+});

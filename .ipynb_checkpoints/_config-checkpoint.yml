@@ -20,10 +20,11 @@ sphinx:
     html_static_path: ["_static"]
     html_js_files:
       - "collapse_footnotes.js"
-      - "custom.js"
       - "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"
+      - "custom.js"
       - "https://unpkg.com/@jupyter-widgets/html-manager@^1.0.0/dist/embed-amd.js"
     html_css_files:
+      - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
       - "https://unpkg.com/tippy.js@6/themes/light-border.css"
     tippy_props:
       placement: "top"
