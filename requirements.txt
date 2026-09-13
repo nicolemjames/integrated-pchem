@@ -1,5 +1,5 @@
 jupyter-book
 matplotlib
 numpy
-ipywidgets
+ipywidgets >= 8.0.0
 ipympl
