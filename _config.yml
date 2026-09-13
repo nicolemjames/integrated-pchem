@@ -20,7 +20,6 @@ sphinx:
     html_static_path: ["_static"]
     html_js_files:
       - "collapse_footnotes.js"
-      - "custom.js"
     html_css_files:
       - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
       - "https://unpkg.com/tippy.js@6/themes/light-border.css"
