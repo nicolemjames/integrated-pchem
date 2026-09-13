@@ -26,11 +26,3 @@
 .custom-reference-popover a.fn-backref {
     display: none;
 }
-
-.tag_hide-input-css .cell_input {
-    display: none !important;
-}
-
-.tag_hide-input-css .cell_output {
-    display: block !important;
-}
