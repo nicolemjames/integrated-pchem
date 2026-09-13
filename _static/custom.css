@@ -23,7 +23,14 @@
     pointer-events: none; /* Prevents popover from flickering on mouse move */
 }
 
-/* Hide back-reference arrows inside preview popovers */
 .custom-reference-popover a.fn-backref {
     display: none;
+}
+
+.tag_hide-input-css .cell_input {
+    display: none !important;
+}
+
+.tag_hide-input-css .cell_output {
+    display: block !important;
 }
