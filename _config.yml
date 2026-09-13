@@ -13,9 +13,8 @@ execute:
 sphinx:
   extra_extensions:
     - sphinx_exercise
-    - sphinx_tippy
   config:
-    tippy_enable_mathjax: true
+    #tippy_enable_mathjax: true
     templates_path: ["_templates"]
     html_static_path: ["_static"]
     html_js_files:
@@ -23,17 +22,17 @@ sphinx:
     html_css_files:
       - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
       - "https://unpkg.com/tippy.js@6/themes/light-border.css"
-    tippy_props:
-      placement: "top"
-      interactive: true
-      theme: "light-border"
-    tippy_skip_anchor_classes:
-      - "headerlink"
-      - "sd-stretched-link"
-      - "exercise"
-      - "solution"
+#    tippy_props:
+#      placement: "top"
+#      interactive: true
+#      theme: "light-border"
+#    tippy_skip_anchor_classes:
+#      - "headerlink"
+#      - "sd-stretched-link"
+#      - "exercise"
+#      - "solution"
 
-# Define the name of the latex output file for PDF builds
+
 latex:
   latex_documents:
     targetname: book.tex
