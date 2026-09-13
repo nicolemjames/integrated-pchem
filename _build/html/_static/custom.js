@@ -1,3 +1,14 @@
+window.MathJax = window.MathJax || {};
+if (!window.MathJax.Hub) {
+  window.MathJax.Hub = {
+    Queue: function (...args) {
+      if (typeof window.MathJax.typesetPromise === "function") {
+        window.MathJax.typesetPromise();
+      }
+    }
+  };
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const popover = document.createElement("div");
     popover.className = "custom-reference-popover";
