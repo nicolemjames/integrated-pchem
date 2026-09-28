@@ -67,7 +67,7 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/internal_energy_2026 09 07';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/internal_energy';</script>
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <script src="../_static/collapse_footnotes.js?v=db66fd7e"></script>
     <script src="../_static/custom.js?v=694adad0"></script>
@@ -76,7 +76,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="4. Wave Mechanics" href="wave-mechanics.html" />
-    <link rel="prev" title="2. Mechanical Properties (P,V,n)" href="mechanical-properties_2026%2009%2007.html" />
+    <link rel="prev" title="2. Mechanical Properties (P,V,n)" href="mechanical-properties.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -230,7 +230,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modelling States</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="mechanical-properties_2026%2009%2007.html">2. Mechanical Properties (P,V,n)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mechanical-properties.html">2. Mechanical Properties (P,V,n)</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Internal Energy (U)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
@@ -295,7 +295,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/nicolemjames/integrated-pchem/main?urlpath=lab/tree/docs/internal_energy_2026 09 07.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/nicolemjames/integrated-pchem/main?urlpath=lab/tree/docs/internal_energy.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -344,7 +344,7 @@
       
       
       
-      <li><a href="../_sources/docs/internal_energy_2026 09 07.ipynb" target="_blank"
+      <li><a href="../_sources/docs/internal_energy.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -431,7 +431,9 @@
             <nav aria-label="Page">
                 <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#translational-energy-states">3.1. Translational Energy States</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">3.2. Glossary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotational-energy-states">3.2. Rotational Energy States</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vibrational-energy-states">3.3. Vibrational Energy States</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">3.4. Glossary</a></li>
 </ul>
             </nav>
         </div>
@@ -468,7 +470,7 @@ Classical Mechanics</div>
 <li><p class="sd-card-text"><span class="math notranslate nohighlight">\(m\)</span> is the particle mass</p></li>
 <li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\vec{v}\)</span> is the particle velocity, a continuous quantity</p></li>
 </ul>
-<p class="sd-card-text">Note that <span class="math notranslate nohighlight">\(\vec{v} = \sqrt{v_x^2+v_y^2+v_z^2}\)</span>, where <span class="math notranslate nohighlight">\(v_i\)</span> indicates the velocity in the <span class="math notranslate nohighlight">\(i\)</span>-direction</p>
+<p class="sd-card-text">Note that <span class="math notranslate nohighlight">\(\vec{v} = \sqrt{v_x^2+v_y^2+v_z^2}\)</span>, where <span class="math notranslate nohighlight">\(v_i\)</span> indicates the velocity in the <span class="math notranslate nohighlight">\(i\)</span>-direction, and this assumes that translational motion is the only form of movement.</p>
 </div>
 </div>
 </div>
@@ -479,13 +481,14 @@ Classical Mechanics</div>
 Quantum Mechanics</div>
 <p class="sd-card-text">Developed through applying quantum theory to describe a particle confined to a 3-dimensional box:</p>
 <div class="math notranslate nohighlight">
-\[ \mathrm{U_{trans}} = \frac{h^2}{8m} \left( \frac{n^2_x}{L^2_x} + \frac{n^2_y}{L^2_y} + \frac{n^2_z}{L^2_z} \right) \]</div>
+\[ \mathrm{U_{trans}} = \frac{h^2}{8m} \sum_i \frac{n^2_i}{L^2_i} \]</div>
 <p class="sd-card-text">where:</p>
 <ul class="simple">
 <li><p class="sd-card-text"><span class="math notranslate nohighlight">\(h\)</span> is <a class="reference internal" href="#term-Planck-s-constant"><span class="xref std std-term">Planck’s constant</span></a></p></li>
 <li><p class="sd-card-text"><span class="math notranslate nohighlight">\(m\)</span> is the particle mass</p></li>
-<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(L_x\)</span>, <span class="math notranslate nohighlight">\(L_y\)</span>, <span class="math notranslate nohighlight">\(L_z\)</span> are the <span class="math notranslate nohighlight">\(x\)</span>-, <span class="math notranslate nohighlight">\(y\)</span>-, and <span class="math notranslate nohighlight">\(z\)</span>-direction box lengths, respectively</p></li>
-<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(n_x\)</span>, <span class="math notranslate nohighlight">\(n_y\)</span>, <span class="math notranslate nohighlight">\(n_z\)</span> are translational quantum numbers, which can take integer values <span class="math notranslate nohighlight">\(\geq 1\)</span></p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(i\)</span> indicates a unique dimension of the box (<span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, <span class="math notranslate nohighlight">\(z\)</span>); boxes may be <span class="math notranslate nohighlight">\(1\)</span>-, <span class="math notranslate nohighlight">\(2\)</span>-, or <span class="math notranslate nohighlight">\(3\)</span>-dimensional.</p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(L_i\)</span> is the length of the box in that dimension (<span class="math notranslate nohighlight">\(L_x\)</span>, <span class="math notranslate nohighlight">\(L_y\)</span>, <span class="math notranslate nohighlight">\(L_z\)</span>).</p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(n_i\)</span> is the translational quantum number associated with that dimension (<span class="math notranslate nohighlight">\(n_x\)</span>, <span class="math notranslate nohighlight">\(n_y\)</span>, <span class="math notranslate nohighlight">\(n_z\)</span>), which can take integer values <span class="math notranslate nohighlight">\(\geq 1\)</span></p></li>
 </ul>
 <p class="sd-card-text">Note that each integer <span class="math notranslate nohighlight">\(n_i\)</span> corresponds to a unique velocity in the <span class="math notranslate nohighlight">\(i\)</span>-direction.</p>
 </div>
@@ -579,8 +582,201 @@ Quantum Mechanics</div>
 </section>
 </div>
 </section>
+<section id="rotational-energy-states">
+<span id="rot"></span><h2><span class="section-number">3.2. </span>Rotational Energy States<a class="headerlink" href="#rotational-energy-states" title="Link to this heading">#</a></h2>
+<p>The molecular model for the energy of rotation draws from classical mechanics models for rotating objects. As shown in Figure <a class="reference internal" href="#rigid-rotor-fig"><span class="std std-numref">Fig. 3.1</span></a>, modelling a diatomic molecule as two point masses <span class="math notranslate nohighlight">\(m_1\)</span> and <span class="math notranslate nohighlight">\(m_2\)</span> rotating about their center of mass is mathematically equivalent to modelling the molecule as a single point mass <span class="math notranslate nohighlight">\(\mu\)</span></p>
+<figure class="align-default" id="rigid-rotor-fig">
+<a class="reference internal image-reference" href="../_images/rigid-rotor.png"><img alt="../_images/rigid-rotor.png" src="../_images/rigid-rotor.png" style="height: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.1 </span><span class="caption-text">Equivalent methods of describing the rotation of a diatomic molecule with moment of inertia <span class="math notranslate nohighlight">\(I\)</span></span><a class="headerlink" href="#rigid-rotor-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Classical Mechanics</div>
+<p class="sd-card-text">Kinetic Energy (<span class="math notranslate nohighlight">\(T\)</span>) of a rotatation is given by:</p>
+<div class="math notranslate nohighlight">
+\[T = \frac{L^2}{2I}\]</div>
+<p class="sd-card-text">where <span class="math notranslate nohighlight">\(L\)</span> is the angular momentum and <span class="math notranslate nohighlight">\(I\)</span> is the moment of inertia. The moment of inertia is given by:</p>
+<div class="math notranslate nohighlight">
+\[I = \frac{L}{\omega}\]</div>
+<p class="sd-card-text">where $<span class="math notranslate nohighlight">\(\omega\)</span><span class="math notranslate nohighlight">\( is the angular velocity. Alternatively, \)</span>I$ can be represented as the motion about the center of mass:</p>
+<div class="math notranslate nohighlight">
+\[I = m_1 l_1^2 + m_2 l_2^2 = \mu l^2\]</div>
+<p class="sd-card-text">where <span class="math notranslate nohighlight">\(\mu = \frac{m_1 m_2}{m_1+m_2}\)</span>.</p>
+<p class="sd-card-text">There is no potential energy for rotation of a rigid rod, as the interparticle distance does not change. Thus, energy can also be formulated as:</p>
+<div class="math notranslate nohighlight">
+\[T = \frac{1}{2}I\omega^2\]</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Quantum Mechanics</div>
+<p class="sd-card-text">The quantum mechanical approach draws on the classical approach to formulate the Hamiltonian:</p>
+<div class="math notranslate nohighlight">
+\[\widehat{H} = \widehat{T} + \widehat{V}\]</div>
+<p class="sd-card-text">where <span class="math notranslate nohighlight">\(\widehat{T} = \frac{\widehat{L^2}}{2I}\)</span> and <span class="math notranslate nohighlight">\(\widehat{V} = 0\)</span>. Thus:</p>
+<div class="math notranslate nohighlight">
+\[\widehat{H} = \frac{\widehat{L^2}}{2I}\]</div>
+<p class="sd-card-text">Using this form of the Hamiltonian in solving the Schrödinger equation <span class="math notranslate nohighlight">\(\widehat{H} \Psi = E \Psi\)</span> for <span class="math notranslate nohighlight">\(E\)</span> yields:</p>
+<div class="math notranslate nohighlight">
+\[E_\text{rot} = J(J+1)\frac{\hbar^2}{2I}\]</div>
+<p class="sd-card-text">where <span class="math notranslate nohighlight">\(J\)</span> is an integer quantum number <span class="math notranslate nohighlight">\(\geq 0\)</span>. This relationship is also commonly represented as:</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[E_\text{rot} = J(J+1)B\]</div>
+<p class="sd-card-text">where:</p>
+<div class="math notranslate nohighlight">
+\[B = \frac{h^2}{8\pi^2 I}\]</div>
+<p class="sd-card-text">in units of Joules (<span class="math notranslate nohighlight">\(\mathrm{J}\)</span>).</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[E_\text{rot} = J(J+1)hc\tilde{B}\]</div>
+<p class="sd-card-text">where:</p>
+<div class="math notranslate nohighlight">
+\[B = \frac{h}{8\pi^2 c I}\]</div>
+<p class="sd-card-text">in units of <span class="math notranslate nohighlight">\(\mathrm{cm^{-1}}\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="rot-values">
+<caption><span class="caption-number">Table 3.1 </span><span class="caption-text">Rotational constant values for select substances<a class="footnote-reference brackets" href="#rot-source" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#rot-values" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Substance</p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\tilde{B} \mathrm{\ (cm^{-1})}\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(B \mathrm{\ (J)}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(^{1}\text{H}_2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(60.853\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1.2088 \cdot 10 ^{-21}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(^{1}\text{H}^{19}\text{F}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(20.9557\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(4.1627\cdot 10 ^{-22}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(^{1}\text{H}^{35}\text{Cl}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(10.5934\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(2.1043\cdot 10 ^{-22}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(^{14}\text{N}_2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1.9982\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(3.9694 \cdot 10^{-23}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(^{12}\text{C}^{16}\text{O}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1.9313\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(3.8364 \cdot 10^{-23}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(^{16}\text{O}_2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1.4456\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(2.8716 \cdot 10^{-23}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(^{35}\text{Cl}_2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.2439\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(4.8449 \cdot 10^{-23}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="vibrational-energy-states">
+<span id="vib"></span><h2><span class="section-number">3.3. </span>Vibrational Energy States<a class="headerlink" href="#vibrational-energy-states" title="Link to this heading">#</a></h2>
+<p>The molecular model for the vibration of two bonded atoms draws from the classical mechanics models for a spring. We can model the two atoms as point masses <span class="math notranslate nohighlight">\(m_1\)</span> and <span class="math notranslate nohighlight">\(m_2\)</span> connected by a spring with spring constant <span class="math notranslate nohighlight">\(k\)</span> dependent on the nature of the bond. Similar to the rotational model, we can also note that this is equivalent to describing the motion of one mass <span class="math notranslate nohighlight">\(\mu\)</span> connected to a string affixed to a stable (non-moving) surface.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Classical Mechanics</div>
+<p class="sd-card-text">Hooke’s law: <span class="math notranslate nohighlight">\(F = -kx\)</span></p>
+<p class="sd-card-text">where spring constant <span class="math notranslate nohighlight">\(k\)</span> describes the stiffness of the spring, and <span class="math notranslate nohighlight">\(x\)</span> indicates the displacement from the equilibrium position.</p>
+<p class="sd-card-text">The total energy associated with vibration of this string is the sum of the kinetic and potential energies. The kinetic energy can be given by <span class="math notranslate nohighlight">\(T = \frac{1}{2} mv^2\)</span>. For the potential energy:</p>
+<div class="math notranslate nohighlight">
+\[V = -\int_0^x -kx dl = \frac{1}{2}kx^2\]</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Quantum Mechanics</div>
+<p class="sd-card-text">Quantum mechanics draws on the classical model to describe the potential energy associated with compressing or stretching the bond. Thus, we formulate the Hamiltonian:</p>
+<div class="math notranslate nohighlight">
+\[ \widehat{H} = \widehat{T} + \widehat{V} = \frac{-\hbar^2}{2m} \frac{d^2}{dx^2}+\frac{1}{2}kx^2\]</div>
+<p class="sd-card-text">Given a wavefunction <span class="math notranslate nohighlight">\(\Psi\)</span>, we can solve the Schrödinger equation, <span class="math notranslate nohighlight">\(\widehat{H}\Psi = E\Psi\)</span>, for <span class="math notranslate nohighlight">\(E\)</span>, which yields:</p>
+<div class="math notranslate nohighlight">
+\[E_\text{vib} = \left( \nu + +\frac{1}{2} \right) \hbar \omega \]</div>
+<p class="sd-card-text">where <span class="math notranslate nohighlight">\(\nu\)</span> is a quantum number that takes integer values <span class="math notranslate nohighlight">\(\geq 0\)</span>, and <span class="math notranslate nohighlight">\(\omega\)</span> is the angular frequency:</p>
+<div class="math notranslate nohighlight">
+\[\omega = \sqrt{\frac{k}{\mu}}\]</div>
+<p class="sd-card-text">where <span class="math notranslate nohighlight">\(k\)</span> is the spring constant that describes the bond, and <span class="math notranslate nohighlight">\(\mu\)</span> is the reduced mass.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="vib-values">
+<caption><span class="caption-number">Table 3.2 </span><span class="caption-text">Vibrational constant values for select substances<a class="footnote-reference brackets" href="#vib-source" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#vib-values" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Substance</p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\( k \mathrm{\ (Nm^{-1})}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(^{1}\text{H}_2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(574.9\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(^{1}\text{H}^{19}\text{F}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(965.7\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(^{1}\text{H}^{35}\text{Cl}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(516.3\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(^{14}\text{N}_2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(2293.8\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(^{12}\text{C}^{16}\text{O}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1903.17\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(^{16}\text{O}_2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1176.8\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(^{35}\text{Cl}_2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(322.7\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section id="glossary">
-<h2><span class="section-number">3.2. </span>Glossary<a class="headerlink" href="#glossary" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.4. </span>Glossary<a class="headerlink" href="#glossary" title="Link to this heading">#</a></h2>
 <dl class="simple glossary">
 <dt id="term-internal-energy">internal energy<a class="headerlink" href="#term-internal-energy" title="Link to this term">#</a></dt><dd><p>The energy is the total kinetic and potential energy defined by and contained within a system, irrespective of external frames of reference. For example, a balloon of air tied to a fence and a balloon of air in a moving car have different kinetic energies relative to an inidivual observer walking down the street. The internal energy reflects only the system energy relative to its own coordinate system and state variables.</p>
 </dd>
@@ -610,6 +806,14 @@ Quantum Mechanics</div>
 <aside class="footnote brackets" id="cube-size" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">3</a><span class="fn-bracket">]</span></span>
 <p>at standard temperature and pressure, 1 mol of an ideal gas occupies a volume of 22.4L Dividing the space equally results in each atom existing in a “box” of length <span class="math notranslate nohighlight">\(3.3\cdot 10^{-9}\, \mathrm{m}\)</span>, which seems as good an estimate as any.</p>
+</aside>
+<aside class="footnote brackets" id="rot-source" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">4</a><span class="fn-bracket">]</span></span>
+<p>Source: Huber &amp; Herzberg, G. (1979). <em>Molecular Spectra and Molecular Structure, IV. Constants of Diatomic Molecules</em>. Van Nostrand Reinhold, New York.</p>
+</aside>
+<aside class="footnote brackets" id="vib-source" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">5</a><span class="fn-bracket">]</span></span>
+<p>Source: AIP, via Atkins &amp; de Paula (2006) <em>Atkins’ Physical Chemistry</em> 8 ed. Oxford University Press.</p>
 </aside>
 </aside>
 </section>
@@ -646,7 +850,7 @@ Quantum Mechanics</div>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="mechanical-properties_2026%2009%2007.html"
+       href="mechanical-properties.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
@@ -682,7 +886,9 @@ Quantum Mechanics</div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#translational-energy-states">3.1. Translational Energy States</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">3.2. Glossary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotational-energy-states">3.2. Rotational Energy States</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vibrational-energy-states">3.3. Vibrational Energy States</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">3.4. Glossary</a></li>
 </ul>
   </nav></div>
 
